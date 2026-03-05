@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light" data-lang="hi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CM-YUVA × On2Cook — Apply online or book a Lucknow appointment. Food business application form with Supabase integration.">
+  <title>Apply Now | CM-YUVA × On2Cook</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+<script src="js/nav.js"></script>
+
+<div class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html"><span class="hi">होम</span><span class="en">Home</span></a><span>›</span><span class="hi">Apply करें</span><span class="en">Apply Now</span></div>
+    <div class="eyebrow"><span class="hi">अभी Apply करें</span><span class="en">Apply Now</span></div>
+    <h1 class="t-h1">
+      <span class="hi">आपका Food Business — <span class="accent">शुरू करें</span></span>
+      <span class="en">Start Your Food Business — <span class="accent">Apply</span></span>
+    </h1>
+    <p class="t-body" style="margin-top:12px;max-width:540px;">
+      <span class="hi">Online form भरें या Lucknow office में appointment book करें। हमारी team 24 hours में connect करेगी।</span>
+      <span class="en">Fill the online form or book an appointment at our Lucknow office. Our team will connect within 24 hours.</span>
+    </p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="apply-grid">
+
+      <!-- ── ONLINE APPLICATION FORM ── -->
+      <div class="apply-box reveal">
+        <div class="apply-box-head">
+          <h2 class="t-h3"><span class="hi">📋 Online Application</span><span class="en">📋 Online Application</span></h2>
+          <p class="t-small" style="margin-top:6px;"><span class="hi">5 मिनट में complete करें</span><span class="en">Complete in 5 minutes</span></p>
+        </div>
+        <div class="apply-box-body">
+          <form onsubmit="ApplyForm.submit(event)" novalidate>
+
+            <div class="field">
+              <label class="label"><span class="hi">पूरा नाम *</span><span class="en">Full Name *</span></label>
+              <input type="text" class="input" name="fullName" placeholder="e.g. Ramesh Kumar" required minlength="2">
+              <div class="err-msg" id="errName"><span class="hi">नाम भरना ज़रूरी है (minimum 2 characters)</span><span class="en">Name is required (minimum 2 characters)</span></div>
+            </div>
+
+            <div class="field">
+              <label class="label"><span class="hi">Mobile Number *</span><span class="en">Mobile Number *</span></label>
+              <input type="tel" class="input" name="phone" placeholder="10-digit number" required pattern="[0-9]{10}" maxlength="10">
+              <div class="err-msg" id="errPhone"><span class="hi">Valid 10-digit number चाहिए</span><span class="en">Enter a valid 10-digit number</span></div>
+            </div>
+
+            <div class="field">
+              <label class="label"><span class="hi">जिला चुनें *</span><span class="en">Select District *</span></label>
+              <!-- FIX #2: <span> tags inside <option> are stripped by browsers.
+                   Plain text used for bilingual labels instead. -->
+              <select class="select" name="district" required>
+                <option value="">— चुनें / Select —</option>
+                <option value="Varanasi">वाराणसी / Varanasi</option>
+                <option value="Ayodhya">अयोध्या / Ayodhya</option>
+                <option value="Lucknow">लखनऊ / Lucknow</option>
+                <option value="Noida">नोएडा / Noida</option>
+                <option value="Ghaziabad">गाज़ियाबाद / Ghaziabad</option>
+                <option value="Gorakhpur">गोरखपुर / Gorakhpur</option>
+                <option value="Kanpur">कानपुर / Kanpur</option>
+              </select>
+              <div class="err-msg" id="errDist"><span class="hi">District चुनना ज़रूरी है</span><span class="en">Please select a district</span></div>
+            </div>
+
+            <div class="field">
+              <label class="label"><span class="hi">Category *</span><span class="en">Category *</span></label>
+              <select class="select" name="category" required>
+                <option value="">— चुनें / Select —</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="General">General / सामान्य</option>
+              </select>
+              <!-- FIX #4: Added missing error element for category validation -->
+              <div class="err-msg" id="errCat"><span class="hi">Category चुनना ज़रूरी है</span><span class="en">Please select a category</span></div>
+            </div>
+
+            <div class="field">
+              <label class="label"><span class="hi">Business Interest *</span><span class="en">Business Interest *</span></label>
+              <select class="select" name="bizType" required>
+                <option value="">— चुनें / Select —</option>
+                <option value="Kiosk">Kiosk / Counter</option>
+                <option value="Tiffin">Tiffin Service</option>
+                <option value="Bhojanalay">Bhojanalay / Eatery</option>
+                <option value="Catering">Small Catering</option>
+                <option value="Cloud Kitchen">Cloud Kitchen</option>
+              </select>
+              <!-- FIX #4: Added missing error element for bizType validation -->
+              <div class="err-msg" id="errBiz"><span class="hi">Business type चुनना ज़रूरी है</span><span class="en">Please select a business type</span></div>
+            </div>
+
+            <div class="field">
+              <label class="label"><span class="hi">कोई सवाल / Note (Optional)</span><span class="en">Any question / Note (Optional)</span></label>
+              <textarea class="textarea" name="note" rows="3" placeholder="Optional..."></textarea>
+            </div>
+
+            <div class="success-box" id="formSuccess">
+              🎉 <span class="hi">Application सफलतापूर्वक Submit हो गई! हमारी team 24 hours में संपर्क करेगी।</span>
+              <span class="en">Application submitted successfully! Our team will contact you within 24 hours.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;margin-top:4px;">
+              <span class="submit-text">
+                <span class="hi">Application Submit करें 🚀</span>
+                <span class="en">Submit Application 🚀</span>
+              </span>
+            </button>
+
+            <p style="font-size:.75rem;color:var(--c-ink30);text-align:center;margin-top:12px;">
+              <span class="hi">🔒 आपकी जानकारी सुरक्षित है। Spam नहीं।</span>
+              <span class="en">🔒 Your information is secure. No spam.</span>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- ── RIGHT COLUMN ── -->
+      <div style="display:flex;flex-direction:column;gap:20px;">
+
+        <!-- APPOINTMENT BOOKING -->
+        <div class="apply-box reveal" id="appointment">
+          <div class="apply-box-head">
+            <h2 class="t-h3"><span class="hi">📅 Lucknow Office Appointment</span><span class="en">📅 Lucknow Office Appointment</span></h2>
+            <p class="t-small" style="margin-top:6px;"><span class="hi">Personal guidance के लिए मिलें</span><span class="en">Meet us for personal guidance</span></p>
+          </div>
+          <div class="apply-box-body">
+            <p class="t-small" style="margin-bottom:16px;">
+              <span class="hi">Date select करें — हम confirm करेंगे।</span>
+              <span class="en">Select a date — we'll confirm your slot.</span>
+            </p>
+            <div class="cal-wrap">
+              <div class="cal-header">
+                <button class="cal-nav" onclick="Cal.prev()">‹</button>
+                <div class="cal-month-title" id="calTitle"></div>
+                <button class="cal-nav" onclick="Cal.next()">›</button>
+              </div>
+              <div class="cal-weekdays">
+                <div class="cal-wd">Su</div><div class="cal-wd">Mo</div><div class="cal-wd">Tu</div>
+                <div class="cal-wd">We</div><div class="cal-wd">Th</div><div class="cal-wd">Fr</div>
+                <div class="cal-wd">Sa</div>
+              </div>
+              <div class="cal-days" id="calGrid"></div>
+            </div>
+
+            <div id="slotsWrap" style="display:none;margin-top:16px;">
+              <div class="t-micro" style="margin-bottom:10px;"><span class="hi">Time Slot चुनें:</span><span class="en">Select Time Slot:</span></div>
+              <div class="slots-grid" id="slotsGrid"></div>
+            </div>
+
+            <div id="bookForm" style="display:none;margin-top:16px;">
+              <div class="field">
+                <label class="label"><span class="hi">नाम</span><span class="en">Name</span></label>
+                <input type="text" class="input" id="bookName" placeholder="Your name">
+              </div>
+              <div class="field">
+                <label class="label"><span class="hi">Mobile</span><span class="en">Mobile</span></label>
+                <input type="tel" class="input" id="bookPhone" placeholder="10-digit number">
+              </div>
+              <button class="btn btn-primary" id="confirmBtn" style="width:100%;justify-content:center;" onclick="Cal.confirm()">
+                <span class="hi">Appointment Confirm करें ✓</span>
+                <span class="en">Confirm Appointment ✓</span>
+              </button>
+            </div>
+
+            <!-- FIX #3: Removed conflicting class="success-box show" — element starts hidden
+                 via display:none and is revealed by JS setting style.display='block'. -->
+            <div id="bookSuccess" style="display:none;" class="success-box">
+              ✅ <span class="hi">Appointment confirm! हमारी team आपको call करेगी।</span>
+              <span class="en">Appointment confirmed! Our team will call you.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOCUMENTS CHECKLIST -->
+        <div class="apply-box reveal">
+          <div class="apply-box-head">
+            <h2 class="t-h3">📄 <span class="hi">Documents Checklist</span><span class="en">Documents Checklist</span></h2>
+          </div>
+          <div class="apply-box-body">
+            <div class="docs-grid">
+              <div class="doc-item">Aadhaar Card</div>
+              <div class="doc-item">PAN Card</div>
+              <div class="doc-item"><span class="hi">जाति प्रमाण पत्र</span><span class="en">Caste Certificate</span></div>
+              <div class="doc-item"><span class="hi">निवास प्रमाण पत्र</span><span class="en">Domicile Certificate</span></div>
+              <div class="doc-item"><span class="hi">शैक्षिक प्रमाण पत्र</span><span class="en">Education Certificate</span></div>
+              <div class="doc-item">Bank Passbook</div>
+              <div class="doc-item">Passport Photo</div>
+              <div class="doc-item">Business Plan</div>
+            </div>
+            <a href="#" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;margin-top:16px;" onclick="alert('PDF download available after portal setup');return false;">
+              📥 <span class="hi">Full Checklist PDF</span><span class="en">Full Checklist PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="card reveal" style="background:var(--c-red-tint);border-color:rgba(163,31,20,.15);">
+          <div style="font-weight:700;font-size:.92rem;margin-bottom:14px;">
+            <span class="hi">📞 Help चाहिए?</span><span class="en">📞 Need Help?</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="https://wa.me/911234567890" target="_blank" style="display:flex;align-items:center;gap:9px;font-size:.85rem;font-weight:600;color:var(--c-red);text-decoration:none;">💬 WhatsApp</a>
+            <a href="tel:+911234567890" style="display:flex;align-items:center;gap:9px;font-size:.85rem;font-weight:600;color:var(--c-ink70);text-decoration:none;">📞 +91 12345 67890</a>
+            <div style="font-size:.8rem;color:var(--c-ink50);">🕐 <span class="hi">Monday–Saturday, 10AM–6PM</span><span class="en">Monday–Saturday, 10AM–6PM</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/shared.js"></script>
+<script src="js/supabase.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light" data-lang="hi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ROI Calculator — अपना Food Business profit calculate करें। Plates/day, price और days set करें। Conservative, Growth और High Output scenarios।">
+  <title>ROI Calculator | CM-YUVA × On2Cook</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+<script src="js/nav.js"></script>
+
+<div class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html"><span class="hi">होम</span><span class="en">Home</span></a><span>›</span><span>ROI Calculator</span></div>
+    <div class="eyebrow">ROI CALCULATOR</div>
+    <h1 class="t-h1">
+      <span class="hi">अपना Profit खुद <span class="accent">Calculate करें</span></span>
+      <span class="en">Calculate Your Own <span class="accent">Profit</span></span>
+    </h1>
+    <p class="t-body" style="margin-top:12px;max-width:500px;">
+      <span class="hi">Real numbers, real assumptions। कोई unrealistic claim नहीं — बस honest picture।</span>
+      <span class="en">Real numbers, real assumptions. No unrealistic claims — just an honest picture.</span>
+    </p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="calc-shell reveal">
+      <div class="calc-grid">
+
+        <!-- INPUTS -->
+        <div class="calc-panel">
+          <div style="font-family:var(--ff-sans);font-weight:700;font-size:.9rem;color:rgba(255,255,255,.55);margin-bottom:18px;">
+            <span class="hi">Scenario चुनें:</span><span class="en">Choose Scenario:</span>
+          </div>
+          <div class="calc-tab-row">
+            <button class="calc-tab on" onclick="Calc.scene('c',this)">
+              <span class="hi">Conservative</span><span class="en">Conservative</span>
+            </button>
+            <button class="calc-tab" onclick="Calc.scene('g',this)">
+              <span class="hi">Growth</span><span class="en">Growth</span>
+            </button>
+            <button class="calc-tab" onclick="Calc.scene('h',this)">
+              <span class="hi">High Output</span><span class="en">High Output</span>
+            </button>
+          </div>
+
+          <div style="margin-bottom:22px;">
+            <label class="calc-lbl"><span class="hi">Plates per Day</span><span class="en">Plates per Day</span></label>
+            <div class="calc-slider-row">
+              <input type="range" class="calc-slider" id="sPlates" min="10" max="250" value="40" oninput="Calc.update()">
+              <div class="calc-val" id="vPlates">40</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:22px;">
+            <label class="calc-lbl"><span class="hi">Avg Price / Plate (₹)</span><span class="en">Avg Price / Plate (₹)</span></label>
+            <div class="calc-slider-row">
+              <input type="range" class="calc-slider" id="sPrice" min="60" max="250" value="100" oninput="Calc.update()">
+              <div class="calc-val" id="vPrice">₹100</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:22px;">
+            <label class="calc-lbl"><span class="hi">Days per Month</span><span class="en">Days per Month</span></label>
+            <div class="calc-slider-row">
+              <input type="range" class="calc-slider" id="sDays" min="20" max="30" value="26" oninput="Calc.update()">
+              <div class="calc-val" id="vDays">26</div>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:16px;margin-top:8px;">
+            <div class="t-micro" style="color:rgba(255,255,255,.3);margin-bottom:10px;">
+              <span class="hi">Cost Assumptions</span><span class="en">Cost Assumptions</span>
+            </div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.25);line-height:1.9;">
+              <span class="hi">
+                Consumables: ₹40 | Power: ₹2 | Labor: ₹12 | Admin: ₹10<br>
+                Total Variable Cost: <strong style="color:rgba(255,255,255,.5);">₹64/plate</strong>
+              </span>
+              <span class="en">
+                Consumables: ₹40 | Power: ₹2 | Labor: ₹12 | Admin: ₹10<br>
+                Total Variable Cost: <strong style="color:rgba(255,255,255,.5);">₹64/plate</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="calc-results">
+          <div class="res-main">
+            <div class="res-lbl"><span class="hi">Monthly Net Profit</span><span class="en">Monthly Net Profit</span></div>
+            <div class="res-big" id="rMonthly">₹33,280</div>
+            <div class="res-hint" id="rSub">40 plates × ₹36 net × 26 days</div>
+          </div>
+
+          <div class="res-grid">
+            <div class="res-item">
+              <div class="res-item-lbl"><span class="hi">Net / Plate</span><span class="en">Net / Plate</span></div>
+              <div class="res-item-num" id="rNet">₹36</div>
+            </div>
+            <div class="res-item">
+              <div class="res-item-lbl"><span class="hi">Daily Profit</span><span class="en">Daily Profit</span></div>
+              <div class="res-item-num" id="rDaily">₹1,440</div>
+            </div>
+            <div class="res-item">
+              <div class="res-item-lbl"><span class="hi">Annual Earnings</span><span class="en">Annual Earnings</span></div>
+              <div class="res-item-num" id="rAnnual">₹3.99L</div>
+            </div>
+            <div class="res-item">
+              <div class="res-item-lbl"><span class="hi">Payback Period</span><span class="en">Payback Period</span></div>
+              <div class="res-item-num" id="rPayback">15 Mo</div>
+            </div>
+          </div>
+
+          <a href="apply.html" class="btn btn-primary" style="justify-content:center;margin-top:4px;">
+            <span class="hi">🚀 इस Model से Apply करें</span>
+            <span class="en">🚀 Apply with This Model</span>
+          </a>
+
+          <div class="calc-foot">
+            <span class="hi">* यह calculator conservative projections पर based है। Actual results vary। ₹5,00,000 project cost baseline।</span>
+            <span class="en">* This calculator is based on conservative projections. Actual results vary. ₹5,00,000 project cost baseline.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCENARIO BREAKDOWN TABLE -->
+    <div style="margin-top:56px;" class="reveal">
+      <div class="eyebrow" style="margin-bottom:20px;"><span class="hi">Scenario Comparison</span><span class="en">Scenario Comparison</span></div>
+      <div style="background:var(--c-paper);border:var(--border-strong);border-radius:var(--r-lg);overflow:hidden;">
+        <table style="width:100%;border-collapse:collapse;font-size:.88rem;">
+          <thead>
+            <tr style="background:var(--c-red);color:#fff;">
+              <th style="padding:14px 20px;text-align:left;font-weight:700;">Scenario</th>
+              <th style="padding:14px 20px;text-align:right;font-weight:700;"><span class="hi">Plates/Day</span><span class="en">Plates/Day</span></th>
+              <th style="padding:14px 20px;text-align:right;font-weight:700;"><span class="hi">Net/Month</span><span class="en">Net/Month</span></th>
+              <th style="padding:14px 20px;text-align:right;font-weight:700;"><span class="hi">Payback</span><span class="en">Payback</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:var(--border);">
+              <td style="padding:14px 20px;font-weight:600;"><span class="hi">Conservative</span><span class="en">Conservative</span></td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">30–50</td>
+              <td style="padding:14px 20px;text-align:right;font-weight:700;font-family:var(--ff-serif);font-size:1rem;color:var(--c-red);">₹32K–46K</td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">~14–18 Mo</td>
+            </tr>
+            <tr style="border-bottom:var(--border);background:var(--c-cream2);">
+              <td style="padding:14px 20px;font-weight:600;"><span class="hi">Growth</span><span class="en">Growth</span></td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">60–90</td>
+              <td style="padding:14px 20px;text-align:right;font-weight:700;font-family:var(--ff-serif);font-size:1rem;color:var(--c-red);">₹54K–84K</td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">~7–10 Mo</td>
+            </tr>
+            <tr>
+              <td style="padding:14px 20px;font-weight:600;">High Output</td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">120–250</td>
+              <td style="padding:14px 20px;text-align:right;font-weight:700;font-family:var(--ff-serif);font-size:1rem;color:var(--c-red);">₹1.2L–2.8L</td>
+              <td style="padding:14px 20px;text-align:right;color:var(--c-ink50);">~3–5 Mo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="background:var(--c-cream2);">
+  <div class="wrap">
+    <div class="dark-cta reveal">
+      <h2 class="t-h2" style="margin-bottom:12px;">
+        <span class="hi">Numbers अच्छे लगे? <span class="accent">Apply करें।</span></span>
+        <span class="en">Like the numbers? <span class="accent">Apply Now.</span></span>
+      </h2>
+      <p><span class="hi">Interest-Free Loan + Full Setup + Training — सब एक साथ।</span><span class="en">Interest-Free Loan + Full Setup + Training — all together.</span></p>
+      <div class="dark-cta-btns">
+        <a href="apply.html" class="btn btn-primary btn-lg"><span class="hi">🚀 Apply करें</span><span class="en">🚀 Apply Now</span></a>
+        <a href="finance.html" class="btn btn-white btn-lg"><span class="hi">Finance Details देखें</span><span class="en">View Finance Details</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/shared.js"></script>
+<script src="js/supabase.js"></script>
+
+</body>
+</html>

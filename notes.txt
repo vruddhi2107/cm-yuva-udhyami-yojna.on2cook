@@ -1,0 +1,312 @@
+# 2. Create Core Pages (Week 1 Priority)
+
+Build these **first 4 pages**.
+
+### 1️⃣ Home Page
+
+Sections to build:
+
+* Hero section
+
+  * Headline
+  * CTA buttons
+  * Eligibility button
+* Proof bar
+* Quick ROI snapshot
+* What you get
+* District tiles (7 districts)
+* Success stories
+* FAQ
+
+**Buttons**
+
+* Apply Online
+* Book Lucknow Appointment
+* Check Eligibility
+
+---
+
+### 2️⃣ Investment & Finance Page
+
+Show financing clearly.
+
+Sections:
+
+* ₹5,00,000 project cost breakdown
+* Setup kit items
+* CM-YUVA loan structure
+* Moratorium explanation
+* Margin money categories
+* EMI estimator
+
+**Feature**
+
+* Small repayment timeline graphic
+
+---
+
+### 3️⃣ ROI Calculator Page
+
+Create a **simple calculator**.
+
+Inputs:
+
+* Plates per day
+* Price per plate
+* Cost per plate
+* Days per month
+
+Default values:
+
+* Plates/day: 40
+* Price: ₹100
+* Cost: ₹64
+* Days: 30
+
+Outputs:
+
+* Profit per plate
+* Profit per day
+* Monthly profit
+* Payback estimate
+
+Add **3 scenario buttons**
+
+* Conservative
+* Growth
+* High Output
+
+---
+
+### 4️⃣ Apply Page
+
+Two options.
+
+Option 1:
+Apply Online Form
+
+Fields:
+
+* Name
+* Phone
+* District
+* Category (SC/ST/OBC/General)
+* Business interest
+* Upload documents
+
+Option 2:
+Book Appointment
+
+Integrate:
+
+* Calendly / booking tool
+
+---
+
+# 3. Build Secondary Pages (Week 2)
+
+### Opportunity Page
+
+Explain:
+
+* Kiosk
+* Tiffin
+* Catering
+* Bhojanalay
+* Cloud Kitchen
+
+---
+
+### Eligibility Page
+
+Checklist UI.
+
+Include:
+
+* Age
+* District
+* Required documents
+* 60-second eligibility quiz
+
+---
+
+### Support Page
+
+Explain support stages:
+
+* Training
+* Setup
+* 30-day launch support
+* Ongoing help
+
+---
+
+### Technology Page
+
+Explain On2Cook tech:
+
+* Hybrid induction + microwave
+* Fast cooking
+* Easy for beginners
+
+---
+
+### Proof Page
+
+Show:
+
+* Awards
+* Media mentions
+* Shark Tank appearance
+* Event photos
+
+---
+
+### Team Page
+
+Profiles:
+
+* Founders
+* Chefs
+* Trainers
+* District coordinators
+
+---
+
+### District Pages (7)
+
+Create template page.
+
+Districts:
+
+* Varanasi
+* Ayodhya
+* Lucknow
+* Noida
+* Ghaziabad
+* Gorakhpur
+* Kanpur
+
+Each page shows:
+
+* Next demo date
+* District contact
+* Local opportunities
+
+---
+
+# 4. Add Required Features
+
+### Lead Form Integration
+
+Connect forms to:
+
+* Google Sheets
+  or
+* CRM
+
+---
+
+### WhatsApp Integration
+
+Add **click-to-chat button**
+
+---
+
+### Appointment Booking
+
+Integrate:
+
+* Calendly
+  or
+* similar scheduling tool
+
+---
+
+### PDF Library
+
+Create download section for:
+
+* Govt approval letter
+* Project cost sheet
+* Proposal documents
+
+---
+
+# 5. UI / UX Requirements
+
+Must include:
+
+* Hindi / English toggle
+* Large readable fonts
+* Sticky Apply button
+* Sticky Book Appointment button
+* Simple step timeline
+
+Example steps:
+
+1. Apply
+2. Shortlist
+3. Training
+4. Setup
+5. 6-month moratorium
+6. Repayment
+
+---
+
+# 6. Homepage Above-the-Fold
+
+Show immediately:
+
+Headline
+“Start your own Food Business”
+
+Subheadline
+Interest-free loan + ₹60,000 working capital
+
+Buttons:
+
+* Apply Online
+* Book Appointment
+* Check Eligibility
+
+Then show:
+
+* Govt backed
+* No royalty
+* Training provided
+* ROI snapshot
+
+---
+
+# 7. Recommended Tech Stack
+
+**Frontend**
+Next.js + Tailwind
+
+**Backend**
+Node / Firebase / Supabase
+
+**Forms**
+Formspree / Google Sheets
+
+**Hosting**
+Vercel
+
+---
+
+# 8. Minimum MVP Checklist
+
+Before launch make sure these work:
+
+✅ Homepage
+✅ ROI calculator
+✅ Apply form
+✅ Appointment booking
+✅ WhatsApp chat
+✅ District pages
+✅ Loan explanation page
+✅ Mobile responsive
+
+---
+

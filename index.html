@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light" data-lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CM-YUVA × On2Cook — UP सरकार की scheme के तहत Interest-Free Loan से Food Business शुरू करें। ₹5L setup, 6 महीने moratorium, ₹60,000 Working Capital।">
+<meta property="og:title" content="CM-YUVA × On2Cook | अपना Food Business शुरू करें">
+<title>CM-YUVA × On2Cook | अपना Food Business शुरू करें</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & TOKENS ──────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --red:#a31f14;--red-d:#7d1810;--red-t:#fdf3f2;
+  --bg:#faf9f7;--surf:#f0ebe0;--cream:#f5f0e8;
+  --ink90:#1a1a1a;--ink70:#3d3d3d;--ink50:#666;--ink30:#999;
+  --rule:rgba(0,0,0,.08);--green:#1a7a4a;--green-t:#f0faf5;
+  --gold:#b8860b;
+  --fd:'Cormorant Garamond',serif;
+  --fu:'Syne',sans-serif;
+  --fb:'Noto Sans Devanagari',sans-serif;
+  --fm:'JetBrains Mono',monospace;
+  --wrap:1140px;--r:10px;
+  --sh:0 4px 24px rgba(0,0,0,.08);
+  --sh-lg:0 12px 48px rgba(0,0,0,.12);
+}
+[data-theme="dark"]{
+  --bg:#111;--surf:#1c1c1c;--cream:#1a1918;
+  --ink90:#f0ede8;--ink70:#c8c4bc;--ink50:#888;--ink30:#444;
+  --rule:rgba(255,255,255,.08);--red-t:#200c0a;
+}
+body{font-family:var(--fb);background:var(--bg);color:var(--ink90);line-height:1.65;transition:background .25s,color .25s}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+
+/* ── BILINGUAL ───────────────────────────────────────── */
+[data-lang="hi"] .en{display:none!important}
+[data-lang="en"] .hi{display:none!important}
+
+/* ── LAYOUT ──────────────────────────────────────────── */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.section{padding:80px 0}
+.section-sm{padding:48px 0}
+.section-intro{text-align:center;max-width:640px;margin:0 auto 52px;display:flex;flex-direction:column;align-items:center;gap:12px}
+
+/* ── TYPOGRAPHY ──────────────────────────────────────── */
+.t-display{font-family:var(--fd);font-size:clamp(2.6rem,6vw,5rem);line-height:1.05;font-weight:700;letter-spacing:-.02em}
+.t-h1{font-family:var(--fd);font-size:clamp(2rem,4vw,3.4rem);line-height:1.1;font-weight:700}
+.t-h2{font-family:var(--fd);font-size:clamp(1.7rem,3.5vw,2.7rem);line-height:1.15;font-weight:700}
+.t-h3{font-family:var(--fu);font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
+.t-body{font-size:1rem;color:var(--ink70);line-height:1.7}
+.t-small{font-size:.87rem;color:var(--ink50)}
+.t-micro{font-family:var(--fu);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink30)}
+.accent{color:var(--red)}
+.eyebrow{font-family:var(--fu);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:8px}
+.eyebrow::before,.eyebrow::after{content:'';flex:0 0 24px;height:1px;background:currentColor;opacity:.4}
+
+/* ── BUTTONS ─────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r);font-family:var(--fu);font-size:.83rem;font-weight:700;border:none;transition:all .18s;white-space:nowrap;cursor:pointer;line-height:1}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-d);transform:translateY(-1px);box-shadow:0 6px 20px rgba(163,31,20,.3)}
+.btn-secondary{background:var(--surf);color:var(--ink90);border:1px solid var(--rule)}
+.btn-secondary:hover{background:var(--cream);border-color:var(--ink30)}
+.btn-ghost{background:transparent;color:var(--ink70);border:1px solid var(--rule)}
+.btn-ghost:hover{background:var(--surf)}
+.btn-white{background:#fff;color:var(--ink90);border:1px solid var(--rule)}
+.btn-white:hover{background:var(--surf)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{opacity:.9}
+.btn-lg{padding:14px 28px;font-size:.9rem}
+.btn-sm{padding:8px 14px;font-size:.76rem}
+.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── CARDS ───────────────────────────────────────────── */
+.card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:24px;box-shadow:var(--sh)}
+.card-sm{padding:16px 20px}
+
+/* ── BADGE ───────────────────────────────────────────── */
+.badge{font-family:var(--fu);font-size:.65rem;font-weight:700;letter-spacing:.06em;padding:3px 8px;border-radius:4px;text-transform:uppercase}
+.badge-green{background:#dcfce7;color:#166534}
+.badge-red{background:#fee2e2;color:#991b1b}
+.badge-gold{background:#fef9c3;color:#854d0e}
+
+/* ── REVEAL ANIMATIONS ───────────────────────────────── */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s,transform .55s}
+.reveal.in{opacity:1;transform:none}
+.anim-up{animation:animUp .7s ease forwards}
+.d2{animation-delay:.15s}
+@keyframes animUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+
+/* ── NAV ─────────────────────────────────────────────── */
+.navbar{position:sticky;top:0;z-index:200;background:var(--bg);border-bottom:1px solid var(--rule);box-shadow:0 1px 16px rgba(0,0,0,.06);transition:background .25s}
+.nav-inner{display:flex;align-items:center;height:60px;gap:6px}
+.nav-logo{display:flex;align-items:center;gap:7px;flex-shrink:0;text-decoration:none}
+.logo-badge{background:var(--red);color:#fff;font-size:.63rem;font-weight:800;letter-spacing:.06em;padding:3px 7px;border-radius:4px;font-family:var(--fu)}
+.logo-x{color:var(--ink30);font-size:.85rem}
+.logo-brand{font-size:1rem;font-weight:700;color:var(--ink90);font-family:var(--fu)}
+.nav-links{display:flex;align-items:center;gap:2px;margin-left:auto}
+.nav-link{padding:6px 10px;border-radius:7px;font-size:.79rem;font-weight:600;color:var(--ink50);text-decoration:none;transition:all .15s;font-family:var(--fu);white-space:nowrap}
+.nav-link:hover,.nav-link.active{background:var(--surf);color:var(--ink90)}
+.nav-link.nav-cta{background:var(--red);color:#fff!important;padding:6px 14px;margin-left:4px}
+.nav-link.nav-cta:hover{background:var(--red-d)}
+.nav-controls{display:flex;align-items:center;gap:4px;margin-left:8px}
+.nav-icon-btn{background:none;border:1px solid var(--rule);border-radius:6px;padding:5px 9px;font-size:.76rem;font-weight:600;color:var(--ink70);cursor:pointer;font-family:var(--fu);transition:all .15s}
+.nav-icon-btn:hover{background:var(--surf)}
+.nav-ham{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;padding:6px;background:none;border:1px solid var(--rule);border-radius:6px}
+.nav-ham span{display:block;height:2px;background:var(--ink70);border-radius:2px;transition:all .22s;transform-origin:center}
+.nav-ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-ham.open span:nth-child(2){opacity:0;width:0}
+.nav-ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mob-menu{display:none;overflow:hidden;max-height:0;transition:max-height .32s cubic-bezier(.4,0,.2,1);border-top:1px solid var(--rule);background:var(--bg)}
+.mob-menu.open{max-height:700px}
+.mob-inner{padding:10px 16px 20px;display:flex;flex-direction:column;gap:2px}
+.mob-link{display:block;padding:11px 12px;border-radius:8px;font-size:.88rem;font-weight:600;color:var(--ink70);text-decoration:none;font-family:var(--fu);transition:all .15s}
+.mob-link:hover,.mob-link.active{background:var(--surf);color:var(--ink90)}
+.mob-link.nav-cta{background:var(--red);color:#fff!important;font-weight:700;text-align:center;margin-top:6px;border-radius:8px}
+.mob-divider{height:1px;background:var(--rule);margin:10px 0}
+.mob-meta{display:flex;gap:8px}
+.mob-meta-btn{flex:1;padding:9px 8px;border:1px solid var(--rule);border-radius:8px;font-size:.76rem;font-weight:600;color:var(--ink60);background:none;cursor:pointer;font-family:var(--fu);transition:all .15s}
+.mob-meta-btn:hover{background:var(--surf)}
+
+/* ── HERO ─────────────────────────────────────────────── */
+.hero-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:80px 0;max-width:var(--wrap);margin:0 auto;padding-left:20px;padding-right:20px}
+.hero-live{font-family:var(--fu);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green);background:var(--green-t);border:1px solid rgba(26,122,74,.15);border-radius:20px;padding:5px 14px;display:inline-block;margin-bottom:20px}
+.hero-h{font-family:var(--fd);font-size:clamp(2.8rem,5.5vw,5rem);line-height:1.04;font-weight:700;letter-spacing:-.02em;margin-bottom:22px}
+.hero-h em{font-style:italic;color:var(--red)}
+.hero-p{font-size:1.02rem;color:var(--ink70);max-width:480px;margin-bottom:28px;line-height:1.75}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.hero-proofs{display:flex;flex-wrap:wrap;gap:8px}
+.hero-proof-pill{font-family:var(--fu);font-size:.71rem;font-weight:600;color:var(--ink50);background:var(--surf);border:1px solid var(--rule);border-radius:20px;padding:5px 12px}
+.stats-panel{background:var(--surf);border:1px solid var(--rule);border-radius:20px;padding:32px;box-shadow:var(--sh-lg)}
+.stat-hero-main{background:var(--bg);border-radius:12px;padding:24px;margin-bottom:20px;border:1px solid var(--rule)}
+.stat-big-num{font-family:var(--fm);font-size:2.8rem;font-weight:700;color:var(--red);line-height:1;margin-bottom:6px}
+.stat-big-lbl{font-family:var(--fu);font-size:.9rem;font-weight:700;color:var(--ink90)}
+.stat-big-sub{font-size:.75rem;color:var(--ink30);margin-top:4px}
+.stats-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-mini{background:var(--bg);border:1px solid var(--rule);border-radius:10px;padding:14px}
+.stat-mini-num{font-family:var(--fm);font-size:1.6rem;font-weight:700;color:var(--ink90);line-height:1;margin-bottom:4px}
+.stat-mini-num.accent{color:var(--red)}
+.stat-mini-lbl{font-family:var(--fu);font-size:.7rem;font-weight:600;color:var(--ink50);line-height:1.4}
+
+/* ── PROOF BAR ───────────────────────────────────────── */
+.proof-bar{background:var(--ink90);padding:14px 0;overflow:hidden}
+.proof-bar-inner{display:flex;align-items:center;gap:32px;max-width:var(--wrap);margin:0 auto;padding:0 20px;flex-wrap:wrap;justify-content:center}
+.proof-item{display:flex;align-items:center;gap:8px;font-family:var(--fu);font-size:.75rem;font-weight:600;color:rgba(255,255,255,.85);white-space:nowrap}
+.proof-icon{font-size:1rem}
+.proof-sep{width:1px;height:16px;background:rgba(255,255,255,.15)}
+
+/* ── ROI SNAPSHOT ────────────────────────────────────── */
+.roi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.roi-col{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:28px;text-align:center}
+.roi-col.featured{background:var(--red);border-color:var(--red);color:#fff}
+.roi-col.featured .roi-num,.roi-col.featured .t-h3{color:#fff}
+.roi-col.featured .roi-sub{color:rgba(255,255,255,.7)}
+.roi-num{font-family:var(--fm);font-size:2.4rem;font-weight:700;color:var(--ink90);margin:10px 0 6px;line-height:1}
+.roi-num.accent{color:var(--red)}
+.roi-sub{font-size:.78rem;color:var(--ink50);margin-top:6px}
+
+/* ── WHAT YOU GET ────────────────────────────────────── */
+.gets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.get-card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:24px;position:relative;overflow:hidden}
+.get-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red)}
+.get-icon{font-size:2rem;margin-bottom:12px;display:block}
+.get-num{font-family:var(--fm);font-size:1.7rem;font-weight:700;color:var(--red);margin-bottom:4px}
+.get-title{font-family:var(--fu);font-size:.88rem;font-weight:700;color:var(--ink90);margin-bottom:6px}
+.get-desc{font-size:.82rem;color:var(--ink50);line-height:1.6}
+
+/* ── FINANCE ─────────────────────────────────────────── */
+.finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.finance-breakdown{background:var(--bg);border:1px solid var(--rule);border-radius:16px;overflow:hidden}
+.fb-head{background:var(--red);color:#fff;padding:20px 24px}
+.fb-head-title{font-family:var(--fu);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.8;margin-bottom:4px}
+.fb-head-num{font-family:var(--fm);font-size:2.2rem;font-weight:700}
+.fb-row{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;border-bottom:1px solid var(--rule);gap:12px}
+.fb-row:last-child{border-bottom:none}
+.fb-row.highlight{background:var(--green-t)}
+.fb-row.total{background:var(--surf);font-weight:700}
+.fb-label{font-size:.85rem;color:var(--ink70);font-family:var(--fu);font-weight:500}
+.fb-val{font-family:var(--fm);font-size:.92rem;font-weight:700;color:var(--ink90)}
+.fb-val.green{color:var(--green)}
+.fb-val.red{color:var(--red)}
+.loan-cards{display:flex;flex-direction:column;gap:14px}
+.loan-card{background:var(--bg);border:1px solid var(--rule);border-radius:12px;padding:20px}
+.loan-card-title{font-family:var(--fu);font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink30);margin-bottom:12px}
+.loan-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule);font-size:.85rem}
+.loan-row:last-child{border-bottom:none}
+.loan-row span:last-child{font-family:var(--fm);font-weight:700}
+.timeline-steps{display:flex;flex-direction:column;gap:0}
+.tl-step{display:flex;gap:16px;padding:16px 0;position:relative}
+.tl-step:not(:last-child)::before{content:'';position:absolute;left:19px;top:44px;bottom:-2px;width:2px;background:var(--rule)}
+.tl-dot{width:38px;height:38px;border-radius:50%;background:var(--surf);border:2px solid var(--rule);display:flex;align-items:center;justify-content:center;font-family:var(--fu);font-size:.75rem;font-weight:800;color:var(--ink70);flex-shrink:0}
+.tl-dot.active{background:var(--red);border-color:var(--red);color:#fff}
+.tl-dot.done{background:var(--green);border-color:var(--green);color:#fff}
+.tl-body{padding-top:6px}
+.tl-title{font-family:var(--fu);font-size:.87rem;font-weight:700;color:var(--ink90);margin-bottom:2px}
+.tl-desc{font-size:.8rem;color:var(--ink50)}
+
+/* ── EMI ESTIMATOR ───────────────────────────────────── */
+.emi-box{background:var(--red-t);border:1px solid rgba(163,31,20,.12);border-radius:14px;padding:24px}
+.emi-cats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.emi-cat{background:var(--bg);border:1px solid var(--rule);border-radius:10px;padding:16px}
+.emi-cat-title{font-family:var(--fu);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink30);margin-bottom:8px}
+.emi-cat-margin{font-family:var(--fm);font-size:1.3rem;font-weight:700;color:var(--red)}
+.emi-cat-emi{font-size:.82rem;color:var(--ink70);margin-top:4px}
+.emi-cat-note{font-size:.75rem;color:var(--ink30);margin-top:2px}
+
+/* ── BUSINESS TYPES ──────────────────────────────────── */
+.biz-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.biz-card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:22px 16px;text-align:center;transition:all .2s;cursor:pointer;display:block}
+.biz-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:0 12px 32px rgba(163,31,20,.12)}
+.biz-icon{font-size:2.2rem;display:block;margin-bottom:12px}
+.biz-name{font-family:var(--fu);font-size:.85rem;font-weight:700;color:var(--ink90);margin-bottom:8px}
+.biz-desc{font-size:.78rem;color:var(--ink50);line-height:1.6;margin-bottom:10px}
+.biz-cta{font-family:var(--fu);font-size:.73rem;font-weight:700;color:var(--red)}
+.biz-tag{font-size:.7rem;font-family:var(--fu);font-weight:600;background:var(--surf);border-radius:4px;padding:2px 6px;color:var(--ink50);margin-top:6px;display:inline-block}
+
+/* ── CALCULATOR ──────────────────────────────────────── */
+.calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.calc-inputs{background:var(--bg);border:1px solid var(--rule);border-radius:16px;padding:28px}
+.calc-results{background:var(--surf);border:1px solid var(--rule);border-radius:16px;padding:28px;position:sticky;top:80px}
+.calc-tabs{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.calc-tab{font-family:var(--fu);font-size:.75rem;font-weight:700;padding:7px 14px;border-radius:6px;border:1px solid var(--rule);background:var(--bg);color:var(--ink50);cursor:pointer;transition:all .15s}
+.calc-tab.on{background:var(--red);border-color:var(--red);color:#fff}
+.slider-group{margin-bottom:22px}
+.slider-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-family:var(--fu);font-size:.8rem;font-weight:600}
+.slider-val{font-family:var(--fm);font-weight:700;color:var(--red);font-size:.9rem}
+input[type=range]{width:100%;height:4px;border-radius:4px;background:var(--rule);appearance:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--red);box-shadow:0 2px 6px rgba(163,31,20,.3)}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.result-row:last-child{border-bottom:none}
+.result-label{font-family:var(--fu);font-size:.8rem;font-weight:600;color:var(--ink50)}
+.result-val{font-family:var(--fm);font-size:1.05rem;font-weight:700;color:var(--ink90)}
+.result-main{background:var(--red);border-radius:12px;padding:20px;text-align:center;margin-bottom:16px}
+.result-main-val{font-family:var(--fm);font-size:2.4rem;font-weight:700;color:#fff;line-height:1}
+.result-main-lbl{font-family:var(--fu);font-size:.76rem;font-weight:600;color:rgba(255,255,255,.75);margin-top:4px}
+.result-sub{font-size:.72rem;color:rgba(255,255,255,.55);margin-top:4px}
+.payback-bar{background:var(--rule);border-radius:4px;height:6px;margin-top:6px;overflow:hidden}
+.payback-fill{height:100%;background:var(--green);border-radius:4px;transition:width .4s}
+
+/* ── ELIGIBILITY / QUIZ ──────────────────────────────── */
+.elig-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.elig-list{display:flex;flex-direction:column;gap:10px}
+.elig-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--bg);border:1px solid var(--rule);border-radius:10px}
+.elig-check{width:22px;height:22px;border-radius:50%;background:var(--green-t);border:1.5px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0;margin-top:2px}
+.elig-text{font-size:.87rem;color:var(--ink70)}
+.elig-text strong{color:var(--ink90);font-family:var(--fu)}
+.quiz-box{background:var(--bg);border:1px solid var(--rule);border-radius:16px;padding:28px}
+.quiz-progress{background:var(--rule);border-radius:4px;height:4px;margin-bottom:16px;overflow:hidden}
+.quiz-bar{height:100%;background:var(--red);border-radius:4px;transition:width .35s}
+.quiz-q{font-family:var(--fd);font-size:1.3rem;font-weight:600;line-height:1.35;margin:16px 0 24px}
+.quiz-btns{display:flex;gap:10px}
+.quiz-result-icon{font-size:3rem;text-align:center;margin-bottom:12px}
+.quiz-result-title{font-family:var(--fd);font-size:1.6rem;font-weight:700;text-align:center}
+
+/* ── DISTRICTS ───────────────────────────────────────── */
+.dist-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dist-card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:22px 16px;text-align:center;transition:all .2s;cursor:pointer;display:block}
+.dist-card:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.dist-icon{font-size:2rem;margin-bottom:8px;display:block}
+.dist-name{font-family:var(--fu);font-size:.9rem;font-weight:700;color:var(--ink90)}
+.dist-sub{font-size:.75rem;color:var(--ink30);margin-top:2px}
+.dist-card .badge{margin-top:8px;display:inline-block}
+
+/* ── STORIES ─────────────────────────────────────────── */
+.stories-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.story-card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:28px;position:relative}
+.story-q{font-family:var(--fd);font-size:4rem;color:var(--red);opacity:.2;position:absolute;top:12px;left:20px;line-height:1}
+.story-text{font-size:.9rem;color:var(--ink70);line-height:1.75;margin-bottom:20px;position:relative;z-index:1;padding-top:16px}
+.story-footer{display:flex;align-items:center;gap:12px}
+.story-av{width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--fu);font-size:.9rem;font-weight:700;flex-shrink:0}
+.story-name{font-family:var(--fu);font-size:.85rem;font-weight:700}
+.story-loc{font-size:.76rem;color:var(--ink30)}
+
+/* ── TECHNOLOGY ──────────────────────────────────────── */
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.tech-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.tech-feat{background:var(--surf);border-radius:10px;padding:16px}
+.tech-feat-icon{font-size:1.4rem;margin-bottom:6px}
+.tech-feat-title{font-family:var(--fu);font-size:.82rem;font-weight:700;color:var(--ink90)}
+.tech-feat-desc{font-size:.76rem;color:var(--ink50);margin-top:3px}
+.tech-visual{background:var(--ink90);border-radius:20px;padding:40px;text-align:center;position:relative;overflow:hidden}
+.tech-visual::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(163,31,20,.15),transparent 70%)}
+.tech-icon-big{font-size:6rem;display:block;position:relative;z-index:1}
+.tech-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px;position:relative;z-index:1}
+.tech-badge{font-family:var(--fu);font-size:.7rem;font-weight:700;background:rgba(255,255,255,.08);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:5px 10px}
+
+/* ── SUPPORT ─────────────────────────────────────────── */
+.support-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.support-card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.support-num{font-family:var(--fm);font-size:3rem;font-weight:700;color:var(--rule);position:absolute;top:-4px;right:12px;line-height:1}
+.support-icon{font-size:1.8rem;margin-bottom:10px;position:relative;z-index:1}
+.support-title{font-family:var(--fu);font-size:.87rem;font-weight:700;margin-bottom:6px;position:relative;z-index:1}
+.support-desc{font-size:.8rem;color:var(--ink50);line-height:1.6;position:relative;z-index:1}
+
+/* ── DOCUMENTS ───────────────────────────────────────── */
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.doc-item{background:var(--surf);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;font-family:var(--fu);font-size:.8rem;font-weight:600;color:var(--ink70);display:flex;align-items:center;gap:8px}
+.doc-item::before{content:'📄';font-size:.9rem}
+
+/* ── FAQ ─────────────────────────────────────────────── */
+.faq-wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+.faq-item{border-bottom:1px solid var(--rule)}
+.faq-btn{width:100%;background:none;border:none;padding:18px 0;text-align:left;font-family:var(--fu);font-size:.9rem;font-weight:600;color:var(--ink90);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .15s}
+.faq-btn:hover{color:var(--red)}
+.faq-icon{font-size:1.1rem;flex-shrink:0;color:var(--ink30);transition:transform .25s}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--red)}
+.faq-ans{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-ans-inner{padding:0 0 18px;font-size:.88rem;color:var(--ink50);line-height:1.8}
+
+/* ── APPLY FORM ──────────────────────────────────────── */
+.apply-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.apply-box{background:var(--bg);border:1px solid var(--rule);border-radius:16px;overflow:hidden}
+.apply-box-head{background:var(--surf);padding:22px 28px;border-bottom:1px solid var(--rule)}
+.apply-box-body{padding:28px}
+.field{margin-bottom:18px}
+.label{display:block;font-family:var(--fu);font-size:.78rem;font-weight:700;color:var(--ink70);margin-bottom:6px}
+.input,.select,.textarea{width:100%;padding:10px 14px;border:1.5px solid var(--rule);border-radius:8px;font-family:var(--fb);font-size:.9rem;color:var(--ink90);background:var(--bg);transition:border-color .2s,box-shadow .2s;outline:none}
+.input:focus,.select:focus,.textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(163,31,20,.08)}
+.textarea{resize:vertical;min-height:80px}
+.select{cursor:pointer}
+.err-msg{font-size:.76rem;color:var(--red);margin-top:5px;display:none;font-family:var(--fu)}
+.err-msg.show{display:block}
+.success-box{background:var(--green-t);border:1px solid rgba(26,122,74,.2);border-radius:8px;padding:14px 16px;font-size:.86rem;color:var(--green);font-family:var(--fu);font-weight:600;margin-bottom:14px;display:none}
+.success-box.show{display:block}
+
+/* ── CALENDAR ────────────────────────────────────────── */
+.cal-wrap{background:var(--surf);border-radius:12px;padding:16px;border:1px solid var(--rule)}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cal-month-title{font-family:var(--fu);font-size:.88rem;font-weight:700}
+.cal-nav{background:none;border:1px solid var(--rule);border-radius:6px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:pointer;color:var(--ink50);transition:all .15s}
+.cal-nav:hover{background:var(--bg);color:var(--ink90)}
+.cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:4px}
+.cal-wd{text-align:center;font-family:var(--fu);font-size:.66rem;font-weight:700;color:var(--ink30);padding:4px 0}
+.cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.cal-day{border:none;border-radius:6px;padding:0;height:32px;font-family:var(--fu);font-size:.79rem;font-weight:600;cursor:pointer;background:none;color:var(--ink70);transition:all .15s}
+.cal-day:hover:not(:disabled){background:var(--red-t);color:var(--red)}
+.cal-day.selected{background:var(--red);color:#fff}
+.cal-day:disabled{opacity:.3;cursor:not-allowed}
+.cal-day.empty{pointer-events:none}
+.slots-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.slot-btn{font-family:var(--fu);font-size:.74rem;font-weight:600;padding:7px 4px;border-radius:6px;border:1px solid var(--rule);background:var(--bg);color:var(--ink70);cursor:pointer;text-align:center;transition:all .15s}
+.slot-btn:hover{border-color:var(--red);color:var(--red)}
+.slot-btn.on{background:var(--red);border-color:var(--red);color:#fff}
+
+/* ── BANKS ───────────────────────────────────────────── */
+.banks-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px 28px;filter:grayscale(1);opacity:.55;transition:all .3s}
+.banks-row:hover{filter:none;opacity:1}
+.bank-logo{font-family:var(--fu);font-size:.75rem;font-weight:700;color:var(--ink50);border:1px solid var(--rule);border-radius:6px;padding:6px 12px;white-space:nowrap}
+
+/* ── DARK CTA ────────────────────────────────────────── */
+.dark-cta{background:var(--ink90);border-radius:20px;padding:56px;text-align:center;position:relative;overflow:hidden}
+.dark-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0,rgba(163,31,20,.2),transparent 60%)}
+.dark-cta h2,.dark-cta p,.dark-cta .eyebrow{position:relative;z-index:1;color:#fff}
+.dark-cta p{color:rgba(255,255,255,.65);max-width:480px;margin:12px auto}
+.dark-cta .eyebrow{color:rgba(163,31,20,.8);justify-content:center;margin-bottom:16px}
+.dark-cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px;position:relative;z-index:1}
+.dark-cta-note{font-family:var(--fu);font-size:.78rem;color:rgba(255,255,255,.4);margin-top:20px;position:relative;z-index:1}
+
+/* ── FOOTER ──────────────────────────────────────────── */
+footer{background:var(--ink90);padding:48px 0 24px;color:rgba(255,255,255,.6)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer-brand .logo-badge{background:var(--red)}
+.footer-brand .logo-brand{color:#fff}
+.footer-brand .logo-x{color:rgba(255,255,255,.3)}
+.footer-desc{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.7;margin-top:14px;max-width:240px}
+.footer-col-title{font-family:var(--fu);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.footer-links a{font-size:.83rem;color:rgba(255,255,255,.55);transition:color .15s}
+.footer-links a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.77rem}
+.footer-helpline{display:flex;flex-direction:column;gap:4px}
+.footer-helpline a{color:rgba(255,255,255,.75);font-family:var(--fu);font-weight:700;font-size:.85rem}
+
+/* ── STICKY & FAB ────────────────────────────────────── */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:190;display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--ink90);color:#fff;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 -4px 24px rgba(0,0,0,.2)}
+.sticky-bar.show{transform:translateY(0)}
+.sticky-text{flex:1;font-family:var(--fu);font-size:.79rem;font-weight:500;line-height:1.4;min-width:0}
+.sticky-close{background:none;border:none;color:rgba(255,255,255,.4);font-size:1rem;cursor:pointer;padding:4px 6px;flex-shrink:0;transition:color .15s}
+.sticky-close:hover{color:#fff}
+.wa-fab{position:fixed;bottom:80px;right:20px;z-index:180;width:52px;height:52px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .2s;text-decoration:none}
+.wa-fab:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+
+/* ── MISC ────────────────────────────────────────────── */
+.section-divider{height:1px;background:var(--rule);max-width:var(--wrap);margin:0 auto}
+.helpline-pill{display:inline-flex;align-items:center;gap:10px;background:var(--surf);border:1px solid var(--rule);border-radius:10px;padding:10px 16px;font-family:var(--fu)}
+.helpline-num{font-size:1rem;font-weight:700;color:var(--ink90)}
+.helpline-free{font-size:.72rem;color:var(--green);font-weight:700;background:var(--green-t);border-radius:4px;padding:2px 6px}
+.process-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.process-steps::before{content:'';position:absolute;top:24px;left:10%;right:10%;height:2px;background:var(--rule);z-index:0}
+.ps-step{text-align:center;position:relative;z-index:1;padding:0 4px}
+.ps-dot{width:48px;height:48px;border-radius:50%;background:var(--bg);border:2px solid var(--rule);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin:0 auto 10px}
+.ps-step.active .ps-dot{background:var(--red);border-color:var(--red)}
+.ps-step.done .ps-dot{background:var(--green);border-color:var(--green)}
+.ps-num{font-family:var(--fu);font-size:.65rem;font-weight:700;color:var(--ink30);margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
+.ps-title{font-family:var(--fu);font-size:.78rem;font-weight:700;color:var(--ink70)}
+.ps-desc{font-size:.71rem;color:var(--ink30);margin-top:3px;line-height:1.4}
+
+/* ── RESPONSIVE ──────────────────────────────────────── */
+@media(max-width:1000px){
+  .biz-grid{grid-template-columns:repeat(3,1fr)}
+  .dist-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .process-steps{grid-template-columns:repeat(3,1fr);gap:16px}
+  .process-steps::before{display:none}
+}
+@media(max-width:860px){
+  .hero-wrap{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px}
+  .hero-r{order:-1}
+  .nav-links{display:none}
+  .nav-ham{display:flex}
+  .mob-menu{display:block}
+  .roi-grid{grid-template-columns:1fr}
+  .gets-grid{grid-template-columns:1fr 1fr}
+  .finance-grid{grid-template-columns:1fr}
+  .calc-wrap{grid-template-columns:1fr}
+  .elig-grid{grid-template-columns:1fr}
+  .tech-grid{grid-template-columns:1fr}
+  .support-grid{grid-template-columns:1fr 1fr}
+  .stories-grid{grid-template-columns:1fr}
+  .apply-grid{grid-template-columns:1fr}
+  .dist-grid{grid-template-columns:repeat(2,1fr)}
+  .biz-grid{grid-template-columns:1fr 1fr}
+  .docs-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+  .section{padding:56px 0}
+  .gets-grid{grid-template-columns:1fr}
+  .biz-grid{grid-template-columns:1fr}
+  .support-grid{grid-template-columns:1fr}
+  .emi-cats{grid-template-columns:1fr}
+  .dark-cta{padding:36px 20px}
+  .calc-tabs{flex-wrap:wrap}
+  .slots-grid{grid-template-columns:repeat(3,1fr)}
+  .dist-grid{grid-template-columns:1fr 1fr}
+  .tech-features{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:repeat(2,1fr)}
+  .stats-mini-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner wrap">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-badge">CM-YUVA</span>
+      <span class="logo-x">×</span>
+      <span class="logo-brand">On2Cook</span>
+    </a>
+    <div class="nav-links">
+      <a href="#roi"         class="nav-link"><span class="hi">Scheme</span><span class="en">Scheme</span></a>
+      <a href="#finance"     class="nav-link"><span class="hi">Finance</span><span class="en">Finance</span></a>
+      <a href="#calculator"  class="nav-link"><span class="hi">Calculator</span><span class="en">Calculator</span></a>
+      <a href="#eligibility" class="nav-link"><span class="hi">Eligibility</span><span class="en">Eligibility</span></a>
+      <a href="#districts"   class="nav-link"><span class="hi">Districts</span><span class="en">Districts</span></a>
+      <a href="#faq"         class="nav-link">FAQ</a>
+      <a href="#apply"       class="nav-link nav-cta"><span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+    </div>
+    <div class="nav-controls">
+      <button class="nav-icon-btn" id="btnLang"  onclick="Site.toggleLang()">EN</button>
+      <button class="nav-icon-btn" id="btnTheme" onclick="Site.toggleTheme()">🌙</button>
+      <button class="nav-ham" id="navHam" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mob-menu" id="mobMenu">
+    <div class="mob-inner">
+      <a href="#roi"         class="mob-link"><span class="hi">Scheme की जानकारी</span><span class="en">About Scheme</span></a>
+      <a href="#finance"     class="mob-link"><span class="hi">Finance / Loan</span><span class="en">Finance / Loan</span></a>
+      <a href="#calculator"  class="mob-link"><span class="hi">ROI Calculator</span><span class="en">ROI Calculator</span></a>
+      <a href="#eligibility" class="mob-link"><span class="hi">Eligibility Check</span><span class="en">Eligibility Check</span></a>
+      <a href="#districts"   class="mob-link"><span class="hi">Districts</span><span class="en">Districts</span></a>
+      <a href="#technology"  class="mob-link"><span class="hi">Technology</span><span class="en">Technology</span></a>
+      <a href="#faq"         class="mob-link">FAQ</a>
+      <a href="#apply"       class="mob-link nav-cta"><span class="hi">🚀 Apply करें</span><span class="en">🚀 Apply Now</span></a>
+      <div class="mob-divider"></div>
+      <div class="mob-meta">
+        <button class="mob-meta-btn" onclick="Site.toggleLang()"><span class="hi">EN Switch</span><span class="en">हिं Switch</span></button>
+        <button class="mob-meta-btn" onclick="Site.toggleTheme()">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<div class="hero-wrap" id="hero">
+  <div class="hero-l anim-up">
+    <div class="hero-live">✦ CM-YUVA × ON2COOK — PHASE 1 OPEN</div>
+    <h1 class="hero-h">
+      <span class="hi">नौकरी नहीं,<br><em>खुद का<br>Food Business</em></span>
+      <span class="en">Not a Job,<br><em>Your Own<br>Food Business</em></span>
+    </h1>
+    <p class="hero-p">
+      <span class="hi">UP सरकार की CM-YUVA Scheme के तहत ₹5 लाख Interest-Free Loan + 6 महीने Moratorium + ₹60,000 Working Capital। On2Cook की Patented Technology से कोई भी Food Business चला सकता है।</span>
+      <span class="en">Under UP Govt's CM-YUVA scheme: ₹5L Interest-Free Loan + 6-Month Moratorium + ₹60,000 Working Capital. Run a successful food business with On2Cook's patented technology — no cooking experience needed.</span>
+    </p>
+    <div class="hero-btns">
+      <a href="#apply"       class="btn btn-primary btn-lg">🚀 <span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+      <a href="#apply"       class="btn btn-white btn-lg">📅 <span class="hi">Appointment</span><span class="en">Book Appointment</span></a>
+      <a href="#eligibility" class="btn btn-ghost">✅ <span class="hi">Eligibility Check</span><span class="en">Check Eligibility</span></a>
+    </div>
+    <div class="hero-proofs">
+      <div class="hero-proof-pill">🏛️ <span class="hi">UP Govt Backed</span><span class="en">UP Govt Backed</span></div>
+      <div class="hero-proof-pill">🦈 Shark Tank India</div>
+      <div class="hero-proof-pill">0% Interest Loan</div>
+      <div class="hero-proof-pill">No Royalty</div>
+      <div class="hero-proof-pill">📜 Patented Tech</div>
+    </div>
+  </div>
+  <div class="hero-r anim-up d2">
+    <div class="stats-panel">
+      <div class="stat-hero-main">
+        <div class="t-micro" style="margin-bottom:8px;">Conservative Model — Net Profit / Month</div>
+        <div class="stat-big-num">₹37K–54K</div>
+        <div class="stat-big-lbl"><span class="hi">प्रति माह Net Profit</span><span class="en">Monthly Net Profit</span></div>
+        <div class="stat-big-sub">40–75 plates/day · ₹36 net/plate · 26 days</div>
+      </div>
+      <div class="stats-mini-grid">
+        <div class="stat-mini"><div class="stat-mini-num accent">0%</div><div class="stat-mini-lbl"><span class="hi">Interest Rate<br>पूरा Loan</span><span class="en">Interest Rate<br>On Full Loan</span></div></div>
+        <div class="stat-mini"><div class="stat-mini-num">6 Mo</div><div class="stat-mini-lbl"><span class="hi">Moratorium<br>Setup time</span><span class="en">Moratorium<br>Setup Period</span></div></div>
+        <div class="stat-mini"><div class="stat-mini-num">₹60K</div><div class="stat-mini-lbl"><span class="hi">Working Capital<br>Account में</span><span class="en">Working Capital<br>In Your Account</span></div></div>
+        <div class="stat-mini"><div class="stat-mini-num">10%</div><div class="stat-mini-lbl"><span class="hi">Govt Subsidy<br>Project cost पर</span><span class="en">Govt Subsidy<br>On Project Cost</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PROOF BAR ═════════════════════════════════════════════ -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <div class="proof-item"><span class="proof-icon">🏛️</span><span class="hi">UP Govt Approved</span><span class="en">UP Govt Approved</span></div>
+    <div class="proof-sep"></div>
+    <div class="proof-item"><span class="proof-icon">🦈</span> Shark Tank India Featured</div>
+    <div class="proof-sep"></div>
+    <div class="proof-item"><span class="proof-icon">📜</span> Patented Hybrid Cooking Tech</div>
+    <div class="proof-sep"></div>
+    <div class="proof-item"><span class="proof-icon">🏆</span> Award Winning Technology</div>
+    <div class="proof-sep"></div>
+    <div class="proof-item"><span class="proof-icon">🛡️</span> 100% Income — Zero Royalty</div>
+    <div class="proof-sep"></div>
+    <div class="proof-item"><span class="proof-icon">📞</span> Helpline: 1800 296 2233</div>
+  </div>
+</div>
+
+<!-- ══ ROI SNAPSHOT ══════════════════════════════════════════ -->
+<section class="section" id="roi" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">ROI Snapshot</span><span class="en">ROI Snapshot</span></div>
+      <h2 class="t-h2"><span class="hi">3 Scenarios में <span class="accent">कमाई</span></span><span class="en">Earnings Across <span class="accent">3 Scenarios</span></span></h2>
+      <p class="t-body"><span class="hi">Real numbers, honest assumptions। कोई exaggeration नहीं।</span><span class="en">Real numbers, honest assumptions. No exaggeration.</span></p>
+    </div>
+    <div class="roi-grid reveal">
+      <div class="roi-col"><div class="t-micro"><span class="hi">Conservative (40 plates/day)</span><span class="en">Conservative (40 plates/day)</span></div><div class="roi-num accent">₹37,440</div><div class="t-h3">Net Profit / Month</div><div class="roi-sub">40 plates × ₹36 net × 26 days</div></div>
+      <div class="roi-col featured"><div class="t-micro">Growth (75 plates/day)</div><div class="roi-num">₹71,760</div><div class="t-h3">Net Profit / Month</div><div class="roi-sub">75 × ₹46 net × 26 days</div></div>
+      <div class="roi-col"><div class="t-micro">High Output (150 plates/day)</div><div class="roi-num accent">₹2.35L+</div><div class="t-h3">Net Profit / Month</div><div class="roi-sub">150 × ₹56 net × 28 days</div></div>
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a href="#calculator" class="btn btn-primary"><span class="hi">अपना Profit Calculate करें →</span><span class="en">Calculate Your Profit →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT YOU GET ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Scheme में क्या मिलता है</span><span class="en">What You Get</span></div>
+      <h2 class="t-h2"><span class="hi">Complete Package — <span class="accent">Day 1 से</span></span><span class="en">Complete Package — <span class="accent">From Day 1</span></span></h2>
+    </div>
+    <div class="gets-grid">
+      <div class="get-card reveal"><span class="get-icon">💰</span><div class="get-num">₹5L</div><div class="get-title"><span class="hi">Interest-Free Loan</span><span class="en">Interest-Free Loan</span></div><div class="get-desc"><span class="hi">100% ब्याज मुक्त ऋण, बिना किसी guarantee के। UP सरकार interest subsidy देती है।</span><span class="en">100% interest-free loan, no guarantee required. UP Govt pays the interest subsidy directly.</span></div></div>
+      <div class="get-card reveal"><span class="get-icon">⏱️</span><div class="get-num">6 Mo</div><div class="get-title"><span class="hi">Moratorium Period</span><span class="en">Moratorium Period</span></div><div class="get-desc"><span class="hi">6 महीने कोई EMI नहीं। Setup करो, customers बनाओ, profit शुरू हो तब repayment।</span><span class="en">Zero EMI for 6 months. Get set up, build customers, start profiting — then begin repayment.</span></div></div>
+      <div class="get-card reveal"><span class="get-icon">🏦</span><div class="get-num">₹60K</div><div class="get-title">Working Capital</div><div class="get-desc"><span class="hi">₹60,000 सीधे आपके bank account में। Raw material और initial operations के लिए।</span><span class="en">₹60,000 credited directly to your bank account for raw materials and initial operations.</span></div></div>
+      <div class="get-card reveal"><span class="get-icon">🎁</span><div class="get-num">10%</div><div class="get-title"><span class="hi">Govt Subsidy</span><span class="en">Govt Subsidy</span></div><div class="get-desc"><span class="hi">Project cost पर 10% Margin Money Subsidy। OBC/Gen: ₹50K, SC/ST: ₹25K।</span><span class="en">10% margin money subsidy on project cost. OBC/Gen: ₹50K, SC/ST: ₹25K.</span></div></div>
+      <div class="get-card reveal"><span class="get-icon">🍳</span><div class="get-num">On2Cook</div><div class="get-title"><span class="hi">Patented Equipment</span><span class="en">Patented Equipment</span></div><div class="get-desc"><span class="hi">Hybrid Induction + Microwave technology। App-guided cooking — chef की ज़रूरत नहीं।</span><span class="en">Hybrid Induction + Microwave technology. App-guided cooking — no chef required.</span></div></div>
+      <div class="get-card reveal"><span class="get-icon">🎓</span><div class="get-num">30 Day</div><div class="get-title"><span class="hi">Training + Support</span><span class="en">Training + Support</span></div><div class="get-desc"><span class="hi">Complete training + 30 days post-launch handholding। Ongoing support भी available।</span><span class="en">Complete training + 30 days post-launch handholding. Ongoing support always available.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINANCE ════════════════════════════════════════════════ -->
+<section class="section" id="finance" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Investment & Finance</span><span class="en">Investment & Finance</span></div>
+      <h2 class="t-h2"><span class="hi">₹5 लाख का <span class="accent">Project Breakdown</span></span><span class="en">₹5 Lakh <span class="accent">Project Breakdown</span></span></h2>
+      <p class="t-body"><span class="hi">पूरा financial structure — transparent और clear।</span><span class="en">Complete financial structure — transparent and clear.</span></p>
+    </div>
+    <div class="finance-grid reveal">
+      <!-- LEFT: cost breakdown + EMI -->
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="finance-breakdown">
+          <div class="fb-head">
+            <div class="fb-head-title">Total Project Cost</div>
+            <div class="fb-head-num">₹5,00,000</div>
+          </div>
+          <div class="fb-row"><span class="fb-label">On2Cook Equipment & Setup</span><span class="fb-val">₹3,80,000</span></div>
+          <div class="fb-row"><span class="fb-label"><span class="hi">Working Capital (Account में)</span><span class="en">Working Capital (in account)</span></span><span class="fb-val">₹60,000</span></div>
+          <div class="fb-row"><span class="fb-label"><span class="hi">Training & Installation</span><span class="en">Training & Installation</span></span><span class="fb-val">₹60,000</span></div>
+          <div class="fb-row highlight"><span class="fb-label">Govt Subsidy (10%)</span><span class="fb-val green">– ₹50,000</span></div>
+          <div class="fb-row total"><span class="fb-label"><span class="hi">आपको लगाना है</span><span class="en">Your Investment</span></span><span class="fb-val red">₹50,000*</span></div>
+        </div>
+        <div class="emi-box">
+          <div class="t-h3" style="margin-bottom:4px;"><span class="hi">Category-wise Margin & EMI</span><span class="en">Category-wise Margin & EMI</span></div>
+          <p class="t-small"><span class="hi">*OBC/General थोड़ा अधिक, SC/ST को extra support</span><span class="en">*OBC/General slightly more, SC/ST gets extra support</span></p>
+          <div class="emi-cats">
+            <div class="emi-cat">
+              <div class="emi-cat-title">OBC / General</div>
+              <div class="emi-cat-margin">₹50,000</div>
+              <div class="emi-cat-emi"><span class="hi">Margin Money (10%)</span><span class="en">Margin Money (10%)</span></div>
+              <div class="emi-cat-note" style="margin-top:8px;">Bank Loan: ₹3,90,000</div>
+              <div class="emi-cat-note">EMI: ~₹9,286 × 42 months</div>
+              <div class="emi-cat-note">After 6-month moratorium</div>
+            </div>
+            <div class="emi-cat">
+              <div class="emi-cat-title">SC / ST</div>
+              <div class="emi-cat-margin" style="color:var(--green);">₹25,000</div>
+              <div class="emi-cat-emi"><span class="hi">Margin Money (5%)</span><span class="en">Margin Money (5%)</span></div>
+              <div class="emi-cat-note" style="margin-top:8px;">Bank Loan: ₹4,25,000</div>
+              <div class="emi-cat-note">EMI: ~₹10,119 × 42 months</div>
+              <div class="emi-cat-note">After 6-month moratorium</div>
+            </div>
+          </div>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--rule);border-radius:12px;padding:20px;">
+          <div class="t-micro" style="margin-bottom:12px;"><span class="hi">Supporting Banks</span><span class="en">Supporting Banks</span></div>
+          <div class="banks-row" style="gap:8px 12px;">
+            <span class="bank-logo">SBI</span><span class="bank-logo">HDFC</span><span class="bank-logo">ICICI</span><span class="bank-logo">Axis</span><span class="bank-logo">PNB</span><span class="bank-logo">Kotak</span><span class="bank-logo">Bandhan</span><span class="bank-logo">IDBI</span><span class="bank-logo">RBL</span><span class="bank-logo">Ujjivan</span><span class="bank-logo">HSBC</span><span class="bank-logo">Dhanlaxmi</span>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT: timeline -->
+      <div>
+        <div class="t-h3" style="margin-bottom:20px;"><span class="hi">📋 Application से Launch तक</span><span class="en">📋 From Application to Launch</span></div>
+        <div class="timeline-steps">
+          <div class="tl-step"><div class="tl-dot done">✓</div><div class="tl-body"><div class="tl-title"><span class="hi">Online Apply करें</span><span class="en">Apply Online</span></div><div class="tl-desc"><span class="hi">Form भरें, documents upload करें</span><span class="en">Fill form, upload documents</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot done">✓</div><div class="tl-body"><div class="tl-title"><span class="hi">Verification & Shortlisting</span><span class="en">Verification & Shortlisting</span></div><div class="tl-desc"><span class="hi">CM-YUVA + On2Cook team review करेगी</span><span class="en">CM-YUVA + On2Cook team will review</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot active">3</div><div class="tl-body"><div class="tl-title"><span class="hi">Bank Approval & Loan Sanction</span><span class="en">Bank Approval & Loan Sanction</span></div><div class="tl-desc"><span class="hi">Partner bank loan sanction करेगा</span><span class="en">Partner bank sanctions the loan</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot">4</div><div class="tl-body"><div class="tl-title"><span class="hi">5–7 Day Training</span><span class="en">5–7 Day Training</span></div><div class="tl-desc"><span class="hi">On2Cook equipment training + business setup</span><span class="en">On2Cook equipment training + business setup</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot">5</div><div class="tl-body"><div class="tl-title"><span class="hi">Equipment Install & Launch 🚀</span><span class="en">Equipment Install & Launch 🚀</span></div><div class="tl-desc"><span class="hi">Setup complete, business शुरू</span><span class="en">Setup complete, business begins</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot">6</div><div class="tl-body"><div class="tl-title"><span class="hi">6 Month Moratorium</span><span class="en">6 Month Moratorium</span></div><div class="tl-desc"><span class="hi">कोई EMI नहीं — profit बनाएं</span><span class="en">No EMI — build your profits</span></div></div></div>
+          <div class="tl-step"><div class="tl-dot">7</div><div class="tl-body"><div class="tl-title"><span class="hi">42 EMIs — Repayment शुरू</span><span class="en">42 EMIs — Repayment Begins</span></div><div class="tl-desc"><span class="hi">Monthly profit से easily cover हो जाती है</span><span class="en">Easily covered by monthly profit</span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUSINESS TYPES ════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">आप क्या शुरू करेंगे</span><span class="en">Choose Your Format</span></div>
+      <h2 class="t-h2"><span class="hi">5 तरह के <span class="accent">Food Business</span></span><span class="en">5 Food Business <span class="accent">Formats</span></span></h2>
+      <p class="t-body"><span class="hi">अपनी जगह, बजट और लक्ष्य के हिसाब से format चुनें।</span><span class="en">Choose the format that fits your location, budget and goals.</span></p>
+    </div>
+    <div class="biz-grid">
+      <div class="biz-card reveal"><span class="biz-icon">🏪</span><div class="biz-name">Kiosk / Counter</div><div class="biz-desc"><span class="hi">कम जगह में maximum orders। Market, station या mall में perfect।</span><span class="en">Maximum orders in minimum space. Perfect for markets, stations, malls.</span></div><div class="biz-tag">40–80 plates/day</div></div>
+      <div class="biz-card reveal"><span class="biz-icon">🍱</span><div class="biz-name">Tiffin Service</div><div class="biz-desc"><span class="hi">Subscription model से stable income। Office और residential areas।</span><span class="en">Stable income via subscription. High demand near offices and residences.</span></div><div class="biz-tag">30–60 tiffins/day</div></div>
+      <div class="biz-card reveal"><span class="biz-icon">🏠</span><div class="biz-name">Bhojanalay</div><div class="biz-desc"><span class="hi">Fixed menu, daily footfall। Low cost, high repeat customers।</span><span class="en">Fixed menu, daily footfall. Low cost, high repeat customers.</span></div><div class="biz-tag">50–100 plates/day</div></div>
+      <div class="biz-card reveal"><span class="biz-icon">🎪</span><div class="biz-name">Small Catering</div><div class="biz-desc"><span class="hi">Events, functions और festivals में high-volume service।</span><span class="en">High-volume service at events, functions and festivals.</span></div><div class="biz-tag">100–500 plates/event</div></div>
+      <div class="biz-card reveal"><span class="biz-icon">☁️</span><div class="biz-name">Cloud Kitchen</div><div class="biz-desc"><span class="hi">Zomato / Swiggy partner। Delivery-first, minimal overhead।</span><span class="en">Zomato/Swiggy partner. Delivery-first model, minimal overhead.</span></div><div class="biz-tag">40–120 orders/day</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CALCULATOR ════════════════════════════════════════════ -->
+<section class="section" id="calculator" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">ROI Calculator</span><span class="en">ROI Calculator</span></div>
+      <h2 class="t-h2"><span class="hi">अपना <span class="accent">Profit Calculate</span> करें</span><span class="en">Calculate Your <span class="accent">Potential Profit</span></span></h2>
+      <p class="t-body"><span class="hi">Sliders adjust करें — real-time results देखें।</span><span class="en">Adjust the sliders — see real-time results.</span></p>
+    </div>
+    <div class="calc-wrap reveal">
+      <div class="calc-inputs">
+        <div class="calc-tabs">
+          <button class="calc-tab on" onclick="Calc.scene('c',this)"><span class="hi">Conservative</span><span class="en">Conservative</span></button>
+          <button class="calc-tab"    onclick="Calc.scene('g',this)"><span class="hi">Growth</span><span class="en">Growth</span></button>
+          <button class="calc-tab"    onclick="Calc.scene('h',this)"><span class="hi">High Output</span><span class="en">High Output</span></button>
+        </div>
+        <div class="slider-group">
+          <div class="slider-label"><span class="hi">Plates per day</span><span class="en">Plates per day</span><span class="slider-val" id="vPlates">40</span></div>
+          <input type="range" id="sPlates" min="10" max="250" value="40" oninput="Calc.update()">
+        </div>
+        <div class="slider-group">
+          <div class="slider-label"><span class="hi">Price per plate (₹)</span><span class="en">Price per plate (₹)</span><span class="slider-val" id="vPrice">₹100</span></div>
+          <input type="range" id="sPrice" min="60" max="250" value="100" oninput="Calc.update()">
+        </div>
+        <div class="slider-group">
+          <div class="slider-label"><span class="hi">Cost per plate (₹)</span><span class="en">Cost per plate (₹)</span><span class="slider-val" id="vCost">₹64</span></div>
+          <input type="range" id="sCost" min="30" max="150" value="64" oninput="Calc.update()">
+        </div>
+        <div class="slider-group">
+          <div class="slider-label"><span class="hi">Working days/month</span><span class="en">Working days/month</span><span class="slider-val" id="vDays">26</span></div>
+          <input type="range" id="sDays" min="15" max="31" value="26" oninput="Calc.update()">
+        </div>
+        <p style="font-size:.75rem;color:var(--ink30);margin-top:8px;"><span class="hi">* Variable cost ₹64 = ingredients + packaging + gas (On2Cook default)</span><span class="en">* Variable cost ₹64 = ingredients + packaging + gas (On2Cook default)</span></p>
+      </div>
+      <div class="calc-results">
+        <div class="result-main">
+          <div class="result-main-val" id="rMonthly">₹37,440</div>
+          <div class="result-main-lbl"><span class="hi">Net Profit / Month</span><span class="en">Net Profit / Month</span></div>
+          <div class="result-sub" id="rSub">40 plates × ₹36 net × 26 days</div>
+        </div>
+        <div class="result-row"><span class="result-label"><span class="hi">Profit per plate</span><span class="en">Profit per plate</span></span><span class="result-val" id="rNet">₹36</span></div>
+        <div class="result-row"><span class="result-label"><span class="hi">Daily profit</span><span class="en">Daily profit</span></span><span class="result-val" id="rDaily">₹1,440</span></div>
+        <div class="result-row"><span class="result-label"><span class="hi">Annual income</span><span class="en">Annual income</span></span><span class="result-val" id="rAnnual">₹4.5L</span></div>
+        <div class="result-row"><span class="result-label"><span class="hi">Loan payback</span><span class="en">Loan payback</span></span><span class="result-val" id="rPayback">13 Mo</span></div>
+        <div style="margin-top:12px;">
+          <div style="display:flex;justify-content:space-between;font-family:var(--fu);font-size:.72rem;color:var(--ink30);margin-bottom:6px;"><span><span class="hi">Loan recovery</span><span class="en">Loan recovery</span></span><span id="rPct">0%</span></div>
+          <div class="payback-bar"><div class="payback-fill" id="rBar" style="width:0%"></div></div>
+        </div>
+        <a href="#apply" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px;"><span class="hi">इस Income के लिए Apply करें →</span><span class="en">Apply for This Income →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ELIGIBILITY ════════════════════════════════════════════ -->
+<section class="section" id="eligibility">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Eligibility</span><span class="en">Eligibility</span></div>
+      <h2 class="t-h2"><span class="hi">क्या आप <span class="accent">Eligible हैं?</span></span><span class="en">Are You <span class="accent">Eligible?</span></span></h2>
+      <p class="t-body"><span class="hi">Quick quiz लें — 30 seconds में जानें।</span><span class="en">Take the quick quiz — know in 30 seconds.</span></p>
+    </div>
+    <div class="elig-grid reveal">
+      <div>
+        <div class="t-h3" style="margin-bottom:16px;"><span class="hi">📋 Eligibility Criteria (CM-YUVA)</span><span class="en">📋 Eligibility Criteria (CM-YUVA)</span></div>
+        <div class="elig-list">
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">आयु: 21–40 वर्ष</span><span class="en">Age: 21–40 years</span></strong><br><span class="hi">Birth certificate / Aadhaar से verify होगी</span><span class="en">Verified via birth certificate / Aadhaar</span></div></div>
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">शिक्षा: न्यूनतम 8वीं पास</span><span class="en">Education: Minimum 8th Pass</span></strong><br><span class="hi">मान्यता प्राप्त school/board से certificate</span><span class="en">Certificate from recognized school/board</span></div></div>
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">Skill Certificate आवश्यक</span><span class="en">Skill Certificate Required</span></strong><br><span class="hi">मान्यता प्राप्त संस्थान से कौशल प्रमाण पत्र। ITI, diploma, degree — सब valid</span><span class="en">Skill certificate from recognized institution. ITI, diploma, degree — all valid</span></div></div>
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">UP का निवासी</span><span class="en">UP Resident</span></strong><br><span class="hi">निवास प्रमाण पत्र / Aadhaar (UP address)</span><span class="en">Domicile certificate / Aadhaar with UP address</span></div></div>
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">Active Bank Account</span><span class="en">Active Bank Account</span></strong><br><span class="hi">Nationalized या scheduled bank में account</span><span class="en">Account in nationalized or scheduled bank</span></div></div>
+          <div class="elig-item"><div class="elig-check">✓</div><div class="elig-text"><strong><span class="hi">कोई existing Govt loan नहीं</span><span class="en">No existing Govt loan</span></strong><br><span class="hi">किसी अन्य Central/State scheme का benefit नहीं (PM SVANidhi को छोड़कर)</span><span class="en">Not availing another Central/State loan scheme (except PM SVANidhi)</span></div></div>
+        </div>
+        <div style="margin-top:20px;padding:16px;background:var(--surf);border-radius:10px;border:1px solid var(--rule);">
+          <div class="t-micro" style="margin-bottom:10px;"><span class="hi">Phase-1 Districts (इन जिलों में अभी apply करें)</span><span class="en">Phase-1 Districts (Apply now in these districts)</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Varanasi</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Ayodhya</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Lucknow</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Noida</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Ghaziabad</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Gorakhpur</span>
+            <span style="font-family:var(--fu);font-size:.75rem;background:var(--red-t);border:1px solid rgba(163,31,20,.15);color:var(--red);padding:4px 10px;border-radius:6px;font-weight:600;">Kanpur</span>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-box" id="quizBox">
+        <div class="t-h3" style="margin-bottom:4px;">⚡ <span class="hi">60-Second Eligibility Quiz</span><span class="en">60-Second Eligibility Quiz</span></div>
+        <p class="t-small" style="margin-bottom:16px;"><span class="hi">5 simple questions — अभी जानें</span><span class="en">5 simple questions — find out now</span></p>
+        <div id="quizBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS TIMELINE ══════════════════════════════════════ -->
+<section class="section-sm" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal" style="margin-bottom:40px;">
+      <div class="eyebrow"><span class="hi">Process</span><span class="en">Process</span></div>
+      <h2 class="t-h2"><span class="hi">Apply से Launch तक — <span class="accent">6 Steps</span></span><span class="en">From Apply to Launch — <span class="accent">6 Steps</span></span></h2>
+    </div>
+    <div class="process-steps reveal">
+      <div class="ps-step done"><div class="ps-dot">✓</div><div class="ps-num">Step 1</div><div class="ps-title"><span class="hi">Apply करें</span><span class="en">Apply</span></div><div class="ps-desc"><span class="hi">Online form + documents</span><span class="en">Online form + documents</span></div></div>
+      <div class="ps-step done"><div class="ps-dot">✓</div><div class="ps-num">Step 2</div><div class="ps-title">Shortlist</div><div class="ps-desc"><span class="hi">Team verification</span><span class="en">Team verification</span></div></div>
+      <div class="ps-step active"><div class="ps-dot">3</div><div class="ps-num">Step 3</div><div class="ps-title"><span class="hi">Loan Sanction</span><span class="en">Loan Sanction</span></div><div class="ps-desc"><span class="hi">Bank approval</span><span class="en">Bank approval</span></div></div>
+      <div class="ps-step"><div class="ps-dot">4</div><div class="ps-num">Step 4</div><div class="ps-title">Training</div><div class="ps-desc">5–7 days</div></div>
+      <div class="ps-step"><div class="ps-dot">5</div><div class="ps-num">Step 5</div><div class="ps-title"><span class="hi">Setup + Launch</span><span class="en">Setup + Launch</span></div><div class="ps-desc"><span class="hi">Business शुरू</span><span class="en">Business starts</span></div></div>
+      <div class="ps-step"><div class="ps-dot">6</div><div class="ps-num">Step 6</div><div class="ps-title"><span class="hi">6 Mo Moratorium</span><span class="en">6 Mo Moratorium</span></div><div class="ps-desc"><span class="hi">फिर 42 EMIs</span><span class="en">Then 42 EMIs</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DISTRICTS ═════════════════════════════════════════════ -->
+<section class="section" id="districts">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Phase-1 Districts</div>
+      <h2 class="t-h2"><span class="hi">7 जिले — <span class="accent">अभी Open</span></span><span class="en">7 Districts — <span class="accent">Open Now</span></span></h2>
+      <p class="t-body"><span class="hi">Slots limited हैं। जल्दी apply करें।</span><span class="en">Slots are limited. Apply early.</span></p>
+    </div>
+    <div class="dist-grid">
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🕌</div><div class="dist-name"><span class="hi">वाराणसी</span><span class="en">Varanasi</span></div><div class="dist-sub">Varanasi</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🛕</div><div class="dist-name"><span class="hi">अयोध्या</span><span class="en">Ayodhya</span></div><div class="dist-sub">Ayodhya</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🏙️</div><div class="dist-name"><span class="hi">लखनऊ</span><span class="en">Lucknow</span></div><div class="dist-sub">Lucknow</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🏢</div><div class="dist-name"><span class="hi">नोएडा</span><span class="en">Noida</span></div><div class="dist-sub">Noida</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🌆</div><div class="dist-name"><span class="hi">गाज़ियाबाद</span><span class="en">Ghaziabad</span></div><div class="dist-sub">Ghaziabad</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🌉</div><div class="dist-name"><span class="hi">गोरखपुर</span><span class="en">Gorakhpur</span></div><div class="dist-sub">Gorakhpur</div><span class="badge badge-green">OPEN</span></a>
+      <a href="#apply" class="dist-card reveal"><div class="dist-icon">🏭</div><div class="dist-name"><span class="hi">कानपुर</span><span class="en">Kanpur</span></div><div class="dist-sub">Kanpur</div><span class="badge badge-green">OPEN</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TECHNOLOGY ════════════════════════════════════════════ -->
+<section class="section" id="technology" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Technology</span><span class="en">Technology</span></div>
+      <h2 class="t-h2"><span class="hi">On2Cook की <span class="accent">Patented Technology</span></span><span class="en">On2Cook's <span class="accent">Patented Technology</span></span></h2>
+      <p class="t-body"><span class="hi">Chef की ज़रूरत नहीं। App-guided cooking से कोई भी consistent quality food बना सकता है।</span><span class="en">No chef required. App-guided cooking lets anyone produce consistent quality food.</span></p>
+    </div>
+    <div class="tech-grid reveal">
+      <div>
+        <div class="tech-features">
+          <div class="tech-feat"><div class="tech-feat-icon">⚡</div><div class="tech-feat-title"><span class="hi">Hybrid Induction + Microwave</span><span class="en">Hybrid Induction + Microwave</span></div><div class="tech-feat-desc"><span class="hi">दोनों technologies एक साथ — तेज़ और consistent cooking</span><span class="en">Both technologies combined — fast and consistent cooking</span></div></div>
+          <div class="tech-feat"><div class="tech-feat-icon">📱</div><div class="tech-feat-title"><span class="hi">App-Guided Recipes</span><span class="en">App-Guided Recipes</span></div><div class="tech-feat-desc"><span class="hi">Step-by-step guidance — कोई experience नहीं चाहिए</span><span class="en">Step-by-step guidance — zero experience needed</span></div></div>
+          <div class="tech-feat"><div class="tech-feat-icon">🔄</div><div class="tech-feat-title"><span class="hi">Consistent Quality</span><span class="en">Consistent Quality</span></div><div class="tech-feat-desc"><span class="hi">हर दिन, हर batch — same taste और quality</span><span class="en">Every day, every batch — same taste and quality</span></div></div>
+          <div class="tech-feat"><div class="tech-feat-icon">⏩</div><div class="tech-feat-title"><span class="hi">3x Faster Cooking</span><span class="en">3x Faster Cooking</span></div><div class="tech-feat-desc"><span class="hi">Traditional cooking से 3 गुना तेज़ — more plates per hour</span><span class="en">3x faster than traditional cooking — more plates per hour</span></div></div>
+          <div class="tech-feat"><div class="tech-feat-icon">💧</div><div class="tech-feat-title"><span class="hi">Water Efficient</span><span class="en">Water Efficient</span></div><div class="tech-feat-desc"><span class="hi">कम पानी, कम gas — operating cost कम</span><span class="en">Less water, less gas — lower operating costs</span></div></div>
+          <div class="tech-feat"><div class="tech-feat-icon">🛡️</div><div class="tech-feat-title"><span class="hi">Food Safe & Hygienic</span><span class="en">Food Safe & Hygienic</span></div><div class="tech-feat-desc"><span class="hi">Sealed cooking — contamination का risk नहीं</span><span class="en">Sealed cooking system — zero contamination risk</span></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="tech-visual">
+          <span class="tech-icon-big">🍳</span>
+          <div class="tech-badges">
+            <span class="tech-badge">📜 Patented</span>
+            <span class="tech-badge">🦈 Shark Tank India</span>
+            <span class="tech-badge">🏆 Award Winning</span>
+            <span class="tech-badge">⚡ Hybrid Tech</span>
+            <span class="tech-badge">📱 App Guided</span>
+            <span class="tech-badge">✅ Chef-Free</span>
+          </div>
+        </div>
+        <div style="margin-top:16px;background:var(--bg);border:1px solid var(--rule);border-radius:12px;padding:20px;">
+          <div class="t-micro" style="margin-bottom:12px;"><span class="hi">As Seen On</span><span class="en">As Seen On</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+            <span style="font-family:var(--fu);font-size:.82rem;font-weight:700;color:var(--ink70);background:var(--surf);padding:6px 12px;border-radius:6px;border:1px solid var(--rule);">🦈 Shark Tank India</span>
+            <span style="font-family:var(--fu);font-size:.82rem;font-weight:700;color:var(--ink70);background:var(--surf);padding:6px 12px;border-radius:6px;border:1px solid var(--rule);">🏛️ UP Govt Partner</span>
+            <span style="font-family:var(--fu);font-size:.82rem;font-weight:700;color:var(--ink70);background:var(--surf);padding:6px 12px;border-radius:6px;border:1px solid var(--rule);">📺 CNBC</span>
+            <span style="font-family:var(--fu);font-size:.82rem;font-weight:700;color:var(--ink70);background:var(--surf);padding:6px 12px;border-radius:6px;border:1px solid var(--rule);">🗞️ Economic Times</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUPPORT ════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Support</span><span class="en">Support</span></div>
+      <h2 class="t-h2"><span class="hi">हम हर कदम <span class="accent">साथ हैं</span></span><span class="en">We're With You <span class="accent">Every Step</span></span></h2>
+    </div>
+    <div class="support-grid">
+      <div class="support-card reveal"><div class="support-num">01</div><span class="support-icon">🎓</span><div class="support-title"><span class="hi">Equipment Training</span><span class="en">Equipment Training</span></div><div class="support-desc"><span class="hi">5–7 day hands-on training। On2Cook system, recipes, operations — सब कुछ।</span><span class="en">5–7 day hands-on training. On2Cook system, recipes, full operations.</span></div></div>
+      <div class="support-card reveal"><div class="support-num">02</div><span class="support-icon">🔧</span><div class="support-title"><span class="hi">Setup & Installation</span><span class="en">Setup & Installation</span></div><div class="support-desc"><span class="hi">Equipment install, kitchen layout, software setup — team आकर करेगी।</span><span class="en">Equipment install, kitchen layout, software setup — our team comes to you.</span></div></div>
+      <div class="support-card reveal"><div class="support-num">03</div><span class="support-icon">🚀</span><div class="support-title"><span class="hi">30-Day Launch Support</span><span class="en">30-Day Launch Support</span></div><div class="support-desc"><span class="hi">Launch के बाद 30 days तक daily check-in। Problems solve करने में help।</span><span class="en">Daily check-in for 30 days post-launch. Help solving any problems immediately.</span></div></div>
+      <div class="support-card reveal"><div class="support-num">04</div><span class="support-icon">📞</span><div class="support-title"><span class="hi">Ongoing Helpline</span><span class="en">Ongoing Helpline</span></div><div class="support-desc"><span class="hi">WhatsApp + Phone support। Monday–Saturday 10AM–6PM। CM-YUVA helpline भी available।</span><span class="en">WhatsApp + Phone support. Monday–Saturday 10AM–6PM. CM-YUVA helpline also available.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUCCESS STORIES ═══════════════════════════════════════ -->
+<section class="section" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Success Stories</span><span class="en">Success Stories</span></div>
+      <h2 class="t-h2"><span class="hi">असली लोग, <span class="accent">असली Results</span></span><span class="en">Real People, <span class="accent">Real Results</span></span></h2>
+    </div>
+    <div class="stories-grid">
+      <div class="story-card reveal"><div class="story-q">"</div><p class="story-text"><span class="hi">On2Cook की training ने मुझे confident बना दिया। पहले महीने में ही 38 orders daily हो गए। Interest-free loan से कोई stress नहीं था।</span><span class="en">On2Cook's training made me confident. In the first month I reached 38 daily orders. No financial stress with the interest-free loan.</span></p><div class="story-footer"><div class="story-av">R</div><div><div class="story-name">Ramesh Kumar</div><div class="story-loc">📍 Varanasi · Tiffin Service</div></div></div></div>
+      <div class="story-card reveal"><div class="story-q">"</div><p class="story-text"><span class="hi">6 महीने का moratorium game changer था। Business ठीक से set हुआ, फिर EMI शुरू हुई — profit से easily cover हो जाती है।</span><span class="en">The 6-month moratorium was a game changer. Business was properly established before EMIs started — easily covered by profit.</span></p><div class="story-footer"><div class="story-av">P</div><div><div class="story-name">Priya Singh</div><div class="story-loc">📍 Lucknow · Kiosk</div></div></div></div>
+      <div class="story-card reveal"><div class="story-q">"</div><p class="story-text"><span class="hi">App-guided cooking ने chef dependency खत्म कर दी। हर रोज़ consistent quality। Royalty नहीं देनी — सब कुछ मेरा।</span><span class="en">App-guided cooking eliminated chef dependency. Consistent quality every day. No royalty — everything is mine to keep.</span></p><div class="story-footer"><div class="story-av">M</div><div><div class="story-name">Mohd. Aamir</div><div class="story-loc">📍 Gorakhpur · Cloud Kitchen</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DOCUMENTS ══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Documents Checklist</span><span class="en">Documents Checklist</span></div>
+      <h2 class="t-h2"><span class="hi">ये <span class="accent">Documents</span> तैयार रखें</span><span class="en">Keep These <span class="accent">Documents</span> Ready</span></h2>
+    </div>
+    <div class="docs-grid reveal">
+      <div class="doc-item">Aadhaar Card</div>
+      <div class="doc-item">PAN Card</div>
+      <div class="doc-item"><span class="hi">जाति प्रमाण पत्र</span><span class="en">Caste Certificate</span></div>
+      <div class="doc-item"><span class="hi">निवास प्रमाण पत्र</span><span class="en">Domicile Certificate</span></div>
+      <div class="doc-item"><span class="hi">शैक्षिक प्रमाण पत्र (8वीं+)</span><span class="en">Education Certificate (8th+)</span></div>
+      <div class="doc-item"><span class="hi">Skill / ITI Certificate</span><span class="en">Skill / ITI Certificate</span></div>
+      <div class="doc-item"><span class="hi">आयु प्रमाण पत्र</span><span class="en">Age Proof Certificate</span></div>
+      <div class="doc-item">Bank Passbook <span class="hi">(पहला पन्ना)</span><span class="en">(front page)</span></div>
+      <div class="doc-item">Passport Photo</div>
+      <div class="doc-item"><span class="hi">हस्ताक्षर</span><span class="en">Signature</span></div>
+      <div class="doc-item"><span class="hi">स्वघोषणा पत्र</span><span class="en">Self-Declaration Letter</span></div>
+      <div class="doc-item"><span class="hi">Vendor Quotation</span><span class="en">Vendor Quotation</span></div>
+    </div>
+    <p class="t-small" style="text-align:center;margin-top:16px;"><span class="hi">* Project Report भी आवश्यक है — हम बनाने में help करेंगे</span><span class="en">* Project Report also required — we'll help you prepare it</span></p>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════ -->
+<section class="section" id="faq" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">FAQ</span><span class="en">FAQ</span></div>
+      <h2 class="t-h2"><span class="hi">अक्सर पूछे जाने वाले <span class="accent">सवाल</span></span><span class="en">Frequently Asked <span class="accent">Questions</span></span></h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <div class="faq-item"><button class="faq-btn"><span class="hi">Loan interest-free कैसे होगा?</span><span class="en">How is the loan interest-free?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">CM-YUVA scheme के तहत UP सरकार पूरी interest subsidy directly bank को देती है। आपको 0% interest देना होगा। Repayment 6 महीने के moratorium के बाद 42 equal installments में होती है।</span><span class="en">Under CM-YUVA, the UP government pays the full interest subsidy directly to the bank. You pay 0% interest. Repayment is in 42 equal installments after a 6-month moratorium.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">क्या मुझे cooking experience चाहिए?</span><span class="en">Do I need cooking experience?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">बिल्कुल नहीं। On2Cook की patented app-guided cooking technology से कोई भी, बिना cooking experience के, consistent quality food prepare कर सकता है। 5–7 day training में सब सिखाया जाता है।</span><span class="en">Absolutely not. On2Cook's patented app-guided technology lets anyone — with zero cooking experience — prepare consistent quality food. Everything is taught in the 5–7 day training.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">Minimum Education क्या चाहिए?</span><span class="en">What is the minimum education required?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">न्यूनतम 8वीं पास (या समकक्ष) + मान्यता प्राप्त संस्थान से कोई भी skill certificate (ITI, diploma, degree — सब valid)। कोई भी skill certificate लगेगा।</span><span class="en">Minimum 8th pass (or equivalent) + any skill certificate from a recognized institution (ITI, diploma, degree — all valid).</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">₹60,000 Working Capital कैसे मिलेगा?</span><span class="en">How will I receive the ₹60,000 Working Capital?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">CM-YUVA scheme के तहत यह amount total ₹5L loan का हिस्सा है और सीधे आपके bank account में credit होती है। Raw material, packaging और initial operating expenses के लिए use करें।</span><span class="en">This amount is part of the total ₹5L loan under CM-YUVA and is credited directly to your bank account for raw materials, packaging and initial operating expenses.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">Margin Money कितनी देनी होगी?</span><span class="en">How much Margin Money is required?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">OBC/General: ₹50,000 (project cost का 10%), SC/ST: ₹25,000 (5%)। सरकार की ओर से 10% Margin Money Subsidy (₹50,000) अलग से मिलती है — यह loan नहीं है, grant है।</span><span class="en">OBC/General: ₹50,000 (10% of project cost), SC/ST: ₹25,000 (5%). The government separately provides a 10% margin money subsidy (₹50,000) — this is a grant, not a loan.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">कोई Royalty देनी होगी?</span><span class="en">Is there any Royalty to pay?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">बिल्कुल नहीं। 100% कमाई आपकी है। On2Cook के साथ कोई royalty, commission, या ongoing fee नहीं है। यह franchise नहीं है।</span><span class="en">Absolutely none. 100% of your earnings are yours. No royalty, commission or ongoing fee with On2Cook. This is not a franchise.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">Repayment कब से शुरू होगी?</span><span class="en">When does repayment start?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">Business launch के 6 महीने बाद। 42 equal monthly installments में। OBC/Gen के लिए EMI ~₹9,286/month, SC/ST के लिए ~₹10,119/month। Conservative model में monthly profit इससे कई गुना ज़्यादा होती है।</span><span class="en">6 months after business launch. In 42 equal monthly installments. EMI ~₹9,286/month for OBC/Gen, ~₹10,119/month for SC/ST. Monthly profit in the conservative model is several times higher than this EMI.</span></div></div></div>
+      <div class="faq-item"><button class="faq-btn"><span class="hi">Apply करने के बाद क्या होगा?</span><span class="en">What happens after I apply?</span><span class="faq-icon">+</span></button><div class="faq-ans"><div class="faq-ans-inner"><span class="hi">हमारी team 24 hours में आपसे contact करेगी। Document verification, Bank referral, Training scheduling — सब step-by-step होगा। Lucknow office में appointment भी book कर सकते हैं।</span><span class="en">Our team will contact you within 24 hours. Document verification, bank referral, training scheduling — all handled step by step. You can also book an appointment at our Lucknow office.</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APPLY ══════════════════════════════════════════════════ -->
+<section class="section" id="apply">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <div class="eyebrow"><span class="hi">Apply Now</span><span class="en">Apply Now</span></div>
+      <h2 class="t-h2"><span class="hi">आज ही <span class="accent">शुरू करें</span></span><span class="en">Start <span class="accent">Today</span></span></h2>
+      <p class="t-body"><span class="hi">5 मिनट का form भरें या Lucknow में appointment book करें।</span><span class="en">Fill the 5-minute form or book an appointment in Lucknow.</span></p>
+    </div>
+    <div class="apply-grid reveal">
+      <!-- FORM -->
+      <div class="apply-box">
+        <div class="apply-box-head">
+          <h2 class="t-h3">📋 <span class="hi">Online Application</span><span class="en">Online Application</span></h2>
+          <p class="t-small" style="margin-top:4px;"><span class="hi">5 मिनट में complete करें — team 24 hrs में contact करेगी</span><span class="en">Complete in 5 minutes — team contacts you within 24 hrs</span></p>
+        </div>
+        <div class="apply-box-body">
+          <form onsubmit="ApplyForm.submit(event)" novalidate>
+            <div class="field"><label class="label"><span class="hi">पूरा नाम *</span><span class="en">Full Name *</span></label><input type="text" class="input" name="fullName" placeholder="e.g. Ramesh Kumar" required minlength="2"><div class="err-msg" id="errName"><span class="hi">नाम भरना ज़रूरी है (min 2 characters)</span><span class="en">Name required (min 2 characters)</span></div></div>
+            <div class="field"><label class="label"><span class="hi">Mobile Number *</span><span class="en">Mobile Number *</span></label><input type="tel" class="input" name="phone" placeholder="10-digit number" required pattern="[0-9]{10}" maxlength="10"><div class="err-msg" id="errPhone"><span class="hi">Valid 10-digit number चाहिए</span><span class="en">Enter a valid 10-digit number</span></div></div>
+            <div class="field"><label class="label"><span class="hi">जिला चुनें *</span><span class="en">Select District *</span></label><select class="select" name="district" required><option value="">— चुनें / Select —</option><option value="Varanasi">वाराणसी / Varanasi</option><option value="Ayodhya">अयोध्या / Ayodhya</option><option value="Lucknow">लखनऊ / Lucknow</option><option value="Noida">नोएडा / Noida</option><option value="Ghaziabad">गाज़ियाबाद / Ghaziabad</option><option value="Gorakhpur">गोरखपुर / Gorakhpur</option><option value="Kanpur">कानपुर / Kanpur</option></select><div class="err-msg" id="errDist"><span class="hi">District चुनना ज़रूरी है</span><span class="en">Please select a district</span></div></div>
+            <div class="field"><label class="label"><span class="hi">Category *</span><span class="en">Category *</span></label><select class="select" name="category" required><option value="">— चुनें / Select —</option><option value="OBC">OBC</option><option value="SC">SC</option><option value="ST">ST</option><option value="General">General / सामान्य</option></select><div class="err-msg" id="errCat"><span class="hi">Category चुनना ज़रूरी है</span><span class="en">Please select a category</span></div></div>
+            <div class="field"><label class="label"><span class="hi">Business Interest *</span><span class="en">Business Interest *</span></label><select class="select" name="bizType" required><option value="">— चुनें / Select —</option><option value="Kiosk">Kiosk / Counter</option><option value="Tiffin">Tiffin Service</option><option value="Bhojanalay">Bhojanalay / Eatery</option><option value="Catering">Small Catering</option><option value="Cloud Kitchen">Cloud Kitchen</option></select><div class="err-msg" id="errBiz"><span class="hi">Business type चुनना ज़रूरी है</span><span class="en">Please select a business type</span></div></div>
+            <div class="field"><label class="label"><span class="hi">कोई सवाल / Note (Optional)</span><span class="en">Any question / Note (Optional)</span></label><textarea class="textarea" name="note" rows="2" placeholder="Optional..."></textarea></div>
+            <div class="success-box" id="formSuccess">🎉 <span class="hi">Application Submit हो गई! हमारी team 24 hours में संपर्क करेगी।</span><span class="en">Application submitted! Our team will contact you within 24 hours.</span></div>
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;"><span class="hi">Application Submit करें 🚀</span><span class="en">Submit Application 🚀</span></button>
+            <p style="font-size:.72rem;color:var(--ink30);text-align:center;margin-top:10px;">🔒 <span class="hi">आपकी जानकारी सुरक्षित है। Spam नहीं।</span><span class="en">Your information is secure. No spam.</span></p>
+          </form>
+        </div>
+      </div>
+      <!-- RIGHT COLUMN -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <!-- APPOINTMENT -->
+        <div class="apply-box" id="appointment">
+          <div class="apply-box-head">
+            <h2 class="t-h3">📅 <span class="hi">Lucknow Appointment</span><span class="en">Lucknow Appointment</span></h2>
+            <p class="t-small" style="margin-top:4px;"><span class="hi">Personal guidance के लिए मिलें</span><span class="en">Meet us for personal guidance</span></p>
+          </div>
+          <div class="apply-box-body" style="padding:20px;">
+            <p class="t-small" style="margin-bottom:14px;"><span class="hi">Date select करें — हम confirm करेंगे।</span><span class="en">Select a date — we'll confirm your slot.</span></p>
+            <div class="cal-wrap">
+              <div class="cal-header"><button class="cal-nav" onclick="Cal.prev()">‹</button><div class="cal-month-title" id="calTitle"></div><button class="cal-nav" onclick="Cal.next()">›</button></div>
+              <div class="cal-weekdays"><div class="cal-wd">Su</div><div class="cal-wd">Mo</div><div class="cal-wd">Tu</div><div class="cal-wd">We</div><div class="cal-wd">Th</div><div class="cal-wd">Fr</div><div class="cal-wd">Sa</div></div>
+              <div class="cal-days" id="calGrid"></div>
+            </div>
+            <div id="slotsWrap" style="display:none;margin-top:14px;"><div class="t-micro" style="margin-bottom:8px;"><span class="hi">Time Slot चुनें:</span><span class="en">Select Time Slot:</span></div><div class="slots-grid" id="slotsGrid"></div></div>
+            <div id="bookForm" style="display:none;margin-top:14px;">
+              <div class="field"><label class="label"><span class="hi">नाम</span><span class="en">Name</span></label><input type="text" class="input" id="bookName" placeholder="Your name"></div>
+              <div class="field"><label class="label">Mobile</label><input type="tel" class="input" id="bookPhone" placeholder="10-digit number"></div>
+              <button class="btn btn-primary" id="confirmBtn" style="width:100%;justify-content:center;" onclick="Cal.confirm()"><span class="hi">Appointment Confirm करें ✓</span><span class="en">Confirm Appointment ✓</span></button>
+            </div>
+            <div id="bookSuccess" style="display:none;" class="success-box">✅ <span class="hi">Appointment confirmed! हमारी team आपको call करेगी।</span><span class="en">Appointment confirmed! Our team will call you.</span></div>
+          </div>
+        </div>
+        <!-- CONTACT -->
+        <div class="card" style="background:var(--red-t);border-color:rgba(163,31,20,.12);">
+          <div style="font-family:var(--fu);font-weight:700;font-size:.9rem;margin-bottom:14px;">📞 <span class="hi">Help चाहिए?</span><span class="en">Need Help?</span></div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="https://wa.me/919099940020" target="_blank" style="display:flex;align-items:center;gap:8px;font-family:var(--fu);font-size:.84rem;font-weight:700;color:var(--green);">💬 WhatsApp</a>
+            <a href="tel:+919129987111" style="display:flex;align-items:center;gap:8px;font-family:var(--fu);font-size:.84rem;font-weight:700;color:var(--ink70);">📞 +91 9129-987-111</a>
+            <a href="tel:18002962233" style="display:flex;align-items:center;gap:8px;font-family:var(--fu);font-size:.84rem;font-weight:700;color:var(--ink70);">📞 1800 296 2233 <span style="font-size:.7rem;background:var(--green-t);color:var(--green);padding:2px 6px;border-radius:4px;font-weight:700;">Toll Free</span></a>
+            <div style="font-size:.78rem;color:var(--ink30);">🕐 Monday–Saturday, 10AM–6PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DARK CTA ═══════════════════════════════════════════════ -->
+<section class="section" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="dark-cta reveal">
+      <div class="eyebrow"><span class="hi">अभी शुरू करें</span><span class="en">Get Started Today</span></div>
+      <h2 class="t-h2"><span class="hi">आपका Food Business <span class="accent">आज से शुरू</span> होता है</span><span class="en">Your Food Business <span class="accent">Starts Today</span></span></h2>
+      <p><span class="hi">Online Apply करें या Lucknow Office में Appointment Book करें।<br>24 hours में हमारी team connect करेगी।</span><span class="en">Apply online or book an appointment at our Lucknow office.<br>Our team will connect with you within 24 hours.</span></p>
+      <div class="dark-cta-btns">
+        <a href="#apply" class="btn btn-primary btn-lg">🚀 <span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+        <a href="#appointment" class="btn btn-white btn-lg">📅 <span class="hi">Appointment Book करें</span><span class="en">Book Appointment</span></a>
+        <a href="https://wa.me/919099940020" target="_blank" class="btn btn-green btn-lg">💬 WhatsApp</a>
+      </div>
+      <div class="dark-cta-note">📞 <span class="hi">Helpline: +91 9129-987-111 | Toll Free: 1800 296 2233 | Monday–Saturday 10AM–6PM</span><span class="en">Helpline: +91 9129-987-111 | Toll Free: 1800 296 2233 | Monday–Saturday 10AM–6PM</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="nav-logo footer-brand" style="display:inline-flex;margin-bottom:14px;">
+          <span class="logo-badge">CM-YUVA</span><span class="logo-x">×</span><span class="logo-brand">On2Cook</span>
+        </a>
+        <p class="footer-desc"><span class="hi">मुख्यमंत्री युवा उद्यमी विकास अभियान के तहत UP के युवाओं को Food Business शुरू करने में help करते हैं।</span><span class="en">Helping UP's youth start successful food businesses under the Mukhyamantri Yuva Udyami Vikas Abhiyan scheme.</span></p>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:6px;">
+          <a href="tel:+919129987111" style="font-family:var(--fu);font-size:.8rem;font-weight:700;color:rgba(255,255,255,.6);">📞 +91 9129-987-111</a>
+          <a href="tel:18002962233"   style="font-family:var(--fu);font-size:.8rem;font-weight:700;color:rgba(255,255,255,.6);">📞 1800 296 2233 (Toll Free)</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title"><span class="hi">जल्दी Links</span><span class="en">Quick Links</span></div>
+        <div class="footer-links">
+          <a href="#roi"><span class="hi">Scheme की जानकारी</span><span class="en">About Scheme</span></a>
+          <a href="#finance"><span class="hi">Finance / Loan</span><span class="en">Finance / Loan</span></a>
+          <a href="#calculator"><span class="hi">ROI Calculator</span><span class="en">ROI Calculator</span></a>
+          <a href="#eligibility"><span class="hi">Eligibility</span><span class="en">Eligibility</span></a>
+          <a href="#apply"><span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title"><span class="hi">Business Types</span><span class="en">Business Types</span></div>
+        <div class="footer-links">
+          <a href="#apply">Kiosk / Counter</a>
+          <a href="#apply">Tiffin Service</a>
+          <a href="#apply">Bhojanalay</a>
+          <a href="#apply">Small Catering</a>
+          <a href="#apply">Cloud Kitchen</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Districts</div>
+        <div class="footer-links">
+          <a href="#apply">Varanasi</a>
+          <a href="#apply">Ayodhya</a>
+          <a href="#apply">Lucknow</a>
+          <a href="#apply">Noida / Ghaziabad</a>
+          <a href="#apply">Gorakhpur</a>
+          <a href="#apply">Kanpur</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="font-size:.76rem;color:rgba(255,255,255,.3);">© 2025 CM-YUVA × On2Cook. <span class="hi">सर्वाधिकार सुरक्षित।</span><span class="en">All rights reserved.</span></div>
+      <div style="display:flex;gap:16px;">
+        <a href="https://msme.cmyuva.org.in/privacy-policy" target="_blank" style="color:rgba(255,255,255,.3);font-size:.75rem;">Privacy Policy</a>
+        <a href="https://msme.cmyuva.org.in/terms-conditions" target="_blank" style="color:rgba(255,255,255,.3);font-size:.75rem;">Terms</a>
+        <a href="https://msme.cmyuva.org.in/disclaimer" target="_blank" style="color:rgba(255,255,255,.3);font-size:.75rem;">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING ELEMENTS ══════════════════════════════════════ -->
+<a href="https://wa.me/919099940020" target="_blank" class="wa-fab" title="WhatsApp">💬</a>
+<div class="sticky-bar" id="sticky">
+  <span class="sticky-text">🚀 <span class="hi">Food Business शुरू करें — UP Govt Interest-Free Loan</span><span class="en">Start Your Food Business — UP Govt Interest-Free Loan</span></span>
+  <a href="#apply" class="btn btn-primary btn-sm sticky-btn"><span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+  <a href="#appointment" class="btn btn-white btn-sm" style="flex-shrink:0;"><span class="hi">Appointment</span><span class="en">Appointment</span></a>
+  <button class="sticky-close" onclick="this.closest('#sticky').classList.remove('show')">✕</button>
+</div>
+
+<!-- ══ JAVASCRIPT ═════════════════════════════════════════════ -->
+<script>
+// ── SUPABASE CONFIG ──────────────────────────────────────────
+// Replace with your actual credentials from Supabase Dashboard → Project Settings → API
+const SUPABASE_URL = 'https://YOUR_PROJECT_ID.supabase.co';
+const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY_HERE';
+
+const sb = {
+  async insert(table, payload) {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json','apikey':SUPABASE_ANON_KEY,'Authorization':`Bearer ${SUPABASE_ANON_KEY}`,'Prefer':'return=representation'},
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) {
+        const raw = await res.text();
+        let msg = raw;
+        try { const j = JSON.parse(raw); msg = j.code === '42501' ? 'RLS policy blocked insert — run supabase-reset.sql' : j.message || raw; } catch(_) {}
+        throw Object.assign(new Error(msg), {status: res.status});
+      }
+      return {ok:true, data: await res.json()};
+    } catch(e) {
+      console.error(`[Supabase] insert(${table}):`, e.message);
+      return {ok:false, error:e.message};
+    }
+  }
+};
+
+// ── SITE ─────────────────────────────────────────────────────
+const Site = {
+  lang:  localStorage.getItem('o2c_lang')  || 'hi',
+  theme: localStorage.getItem('o2c_theme') || 'light',
+  init() {
+    this.applyTheme();
+    this.applyLang();
+    this.initNav();
+    this.initReveal();
+    this.initFAQ();
+    setTimeout(() => { const el = document.getElementById('sticky'); if(el) el.classList.add('show'); }, 2500);
+  },
+  applyTheme() {
+    document.documentElement.setAttribute('data-theme', this.theme);
+    const btn = document.getElementById('btnTheme');
+    if(btn) btn.textContent = this.theme === 'dark' ? '☀️' : '🌙';
+  },
+  toggleTheme() {
+    this.theme = this.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('o2c_theme', this.theme);
+    this.applyTheme();
+  },
+  applyLang() {
+    document.documentElement.setAttribute('data-lang', this.lang);
+    document.documentElement.lang = this.lang;
+    const btn = document.getElementById('btnLang');
+    if(btn) btn.textContent = this.lang === 'hi' ? 'EN' : 'हिं';
+  },
+  toggleLang() {
+    this.lang = this.lang === 'hi' ? 'en' : 'hi';
+    localStorage.setItem('o2c_lang', this.lang);
+    this.applyLang();
+  },
+  initNav() {
+    const ham = document.getElementById('navHam');
+    const mob = document.getElementById('mobMenu');
+    if(ham && mob) {
+      ham.addEventListener('click', () => { mob.classList.toggle('open'); ham.classList.toggle('open'); });
+      document.addEventListener('click', e => { if(!ham.contains(e.target) && !mob.contains(e.target)) { mob.classList.remove('open'); ham.classList.remove('open'); } });
+    }
+    // Close mob menu on link click
+    document.querySelectorAll('.mob-link').forEach(a => a.addEventListener('click', () => { mob.classList.remove('open'); ham.classList.remove('open'); }));
+    // Active section highlight on scroll
+    const sections = ['hero','roi','finance','calculator','eligibility','districts','technology','faq','apply'];
+    const links = document.querySelectorAll('.nav-link');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting) {
+          links.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+          if(active) active.classList.add('active');
+        }
+      });
+    }, {threshold:0.3});
+    sections.forEach(id => { const el = document.getElementById(id); if(el) obs.observe(el); });
+  },
+  initReveal() {
+    const els = document.querySelectorAll('.reveal');
+    if(!els.length) return;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e,i) => { if(e.isIntersecting) { setTimeout(() => e.target.classList.add('in'), i*70); obs.unobserve(e.target); } });
+    }, {threshold:0.08});
+    els.forEach(el => obs.observe(el));
+  },
+  initFAQ() {
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const ans  = item.querySelector('.faq-ans');
+        const open = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-ans').style.maxHeight = '0'; });
+        if(!open) { item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+      });
+    });
+  }
+};
+
+// ── CALCULATOR ───────────────────────────────────────────────
+const Calc = {
+  init() { this.update(); },
+  update() {
+    const plates = +document.getElementById('sPlates').value;
+    const price  = +document.getElementById('sPrice').value;
+    const cost   = +document.getElementById('sCost').value;
+    const days   = +document.getElementById('sDays').value;
+    const s = (id,v) => { const e = document.getElementById(id); if(e) e.textContent = v; };
+    s('vPlates', plates); s('vPrice', '₹'+price); s('vCost', '₹'+cost); s('vDays', days);
+    const net     = Math.max(0, price - cost);
+    const daily   = plates * net;
+    const monthly = daily * days;
+    const annual  = monthly * 12;
+    const payback = monthly > 0 ? Math.ceil(500000/monthly) : '—';
+    const pct     = monthly > 0 ? Math.min(100, Math.round((monthly/500000)*100*12)) : 0;
+    s('rNet',     '₹'+net);
+    s('rDaily',   '₹'+this._f(daily));
+    s('rMonthly', '₹'+this._f(monthly));
+    s('rAnnual',  annual >= 1e5 ? '₹'+(annual/1e5).toFixed(1)+'L' : '₹'+this._f(annual));
+    s('rPayback', payback+'  Mo');
+    s('rSub',     `${plates} plates × ₹${net} net × ${days} days`);
+    s('rPct',     pct+'%');
+    const bar = document.getElementById('rBar');
+    if(bar) bar.style.width = pct+'%';
+  },
+  scene(type, btn) {
+    document.querySelectorAll('.calc-tab').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    const s = {c:{plates:40,price:100,cost:64,days:26},g:{plates:75,price:110,cost:64,days:26},h:{plates:150,price:120,cost:64,days:28}}[type];
+    const sv = (id,v) => { const e = document.getElementById(id); if(e) e.value = v; };
+    sv('sPlates',s.plates); sv('sPrice',s.price); sv('sCost',s.cost); sv('sDays',s.days);
+    this.update();
+  },
+  _f: n => n.toLocaleString('en-IN')
+};
+
+// ── QUIZ ─────────────────────────────────────────────────────
+const Quiz = {
+  step:0, answers:[],
+  qs:[
+    {hi:'क्या आप Uttar Pradesh के निवासी हैं?',          en:'Are you a resident of Uttar Pradesh?'},
+    {hi:'क्या आपकी आयु 21–40 वर्ष के बीच है?',          en:'Is your age between 21 and 40 years?'},
+    {hi:'क्या आप 8वीं पास या उससे ऊपर हैं?',            en:'Are you 8th pass or above?'},
+    {hi:'क्या आपके पास कोई Skill Certificate है?',       en:'Do you have any Skill Certificate (ITI/Diploma etc.)?'},
+    {hi:'क्या आपका active bank account है?',             en:'Do you have an active bank account?'},
+  ],
+  init() { this.step=0; this.answers=[]; this.render(); },
+  render() {
+    const el = document.getElementById('quizBody');
+    if(!el) return;
+    if(this.step >= this.qs.length) { this.result(el); return; }
+    const q = this.qs[this.step];
+    const pct = Math.round((this.step/this.qs.length)*100);
+    el.innerHTML = `
+      <div class="quiz-progress"><div class="quiz-bar" style="width:${pct}%"></div></div>
+      <div class="t-micro" style="margin-bottom:10px;">${this.step+1} / ${this.qs.length}</div>
+      <div class="quiz-q"><span class="hi">${q.hi}</span><span class="en">${q.en}</span></div>
+      <div class="quiz-btns" style="display:flex;gap:10px;margin-top:16px;">
+        <button class="btn btn-primary" style="flex:1;justify-content:center;" onclick="Quiz.ans(true)"><span class="hi">हाँ</span><span class="en">Yes</span></button>
+        <button class="btn btn-secondary" style="flex:1;justify-content:center;" onclick="Quiz.ans(false)"><span class="hi">नहीं</span><span class="en">No</span></button>
+      </div>`;
+    Site.applyLang();
+  },
+  ans(v) { this.answers.push(v); this.step++; this.render(); },
+  result(el) {
+    const score = this.answers.filter(Boolean).length;
+    const all   = score === this.qs.length;
+    el.innerHTML = all ? `
+      <div class="quiz-result-icon">🎉</div>
+      <div class="quiz-result-title" style="color:var(--green);margin-bottom:10px;"><span class="hi">आप Eligible हैं!</span><span class="en">You Are Eligible!</span></div>
+      <p style="text-align:center;font-size:.86rem;color:var(--ink50);margin:8px 0 20px;"><span class="hi">सभी criteria match। अभी apply करें।</span><span class="en">All criteria match. Apply now.</span></p>
+      <a href="#apply" class="btn btn-primary" style="width:100%;justify-content:center;">🚀 <span class="hi">Apply करें</span><span class="en">Apply Now</span></a>
+      <button onclick="Quiz.init()" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;margin-top:8px;"><span class="hi">फिर से try करें</span><span class="en">Try Again</span></button>
+    ` : `
+      <div class="quiz-result-icon">💬</div>
+      <div class="quiz-result-title" style="margin-bottom:10px;">${score}/5 <span class="hi">Criteria Match</span><span class="en">Criteria Match</span></div>
+      <p style="text-align:center;font-size:.86rem;color:var(--ink50);margin:8px 0 20px;"><span class="hi">हमसे बात करें — हम guide करेंगे।</span><span class="en">Speak to us — we'll guide you through it.</span></p>
+      <a href="https://wa.me/919099940020" target="_blank" class="btn btn-green" style="width:100%;justify-content:center;">💬 WhatsApp <span class="hi">पर बात करें</span><span class="en">Chat Now</span></a>
+      <button onclick="Quiz.init()" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;margin-top:8px;"><span class="hi">फिर से try करें</span><span class="en">Try Again</span></button>`;
+    Site.applyLang();
+  }
+};
+
+// ── APPLY FORM ───────────────────────────────────────────────
+const ApplyForm = {
+  async submit(e) {
+    e.preventDefault();
+    const form = e.target;
+    if(!this._validate(form)) return;
+    const btn  = form.querySelector('#submitBtn');
+    const orig = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span>';
+    const payload = {
+      full_name:     form.fullName.value.trim(),
+      phone:         form.phone.value.trim(),
+      district:      form.district.value,
+      category:      form.category.value,
+      business_type: form.bizType.value,
+      note:          form.note?.value?.trim() || '',
+      created_at:    new Date().toISOString(),
+      status:        'new'
+    };
+    const result = await sb.insert('applications', payload);
+    btn.disabled = false; btn.innerHTML = orig;
+    console.log('Application:', payload, result);
+    document.getElementById('formSuccess').classList.add('show');
+    form.reset(); Site.applyLang();
+  },
+  _validate(form) {
+    let ok = true;
+    const show = (id,v) => { const el = document.getElementById(id); if(el) el.classList.toggle('show',v); };
+    const nameOk  = form.fullName?.value?.trim().length >= 2;   show('errName',  !nameOk);  if(!nameOk)  ok=false;
+    const phoneOk = /^\d{10}$/.test(form.phone?.value?.trim()); show('errPhone', !phoneOk); if(!phoneOk) ok=false;
+    const distOk  = !!form.district?.value;                      show('errDist',  !distOk);  if(!distOk)  ok=false;
+    const catOk   = !!form.category?.value;                      show('errCat',   !catOk);   if(!catOk)   ok=false;
+    const bizOk   = !!form.bizType?.value;                       show('errBiz',   !bizOk);   if(!bizOk)   ok=false;
+    return ok;
+  }
+};
+
+// ── CALENDAR ─────────────────────────────────────────────────
+const Cal = {
+  month:new Date().getMonth(), year:new Date().getFullYear(),
+  selDate:null, selTime:null,
+  init() { this.render(); },
+  render() {
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const el = document.getElementById('calTitle');
+    const grid = document.getElementById('calGrid');
+    if(!el||!grid) return;
+    el.textContent = `${MONTHS[this.month]} ${this.year}`;
+    const first = new Date(this.year,this.month,1).getDay();
+    const total = new Date(this.year,this.month+1,0).getDate();
+    const today = new Date(); today.setHours(0,0,0,0);
+    let h = Array(first).fill('<div class="cal-day empty"></div>').join('');
+    for(let d=1;d<=total;d++){
+      const dt  = new Date(this.year,this.month,d);
+      const dis = dt < today || dt.getDay()===0;
+      const sel = this.selDate && this.selDate.getDate()===d && this.selDate.getMonth()===this.month;
+      h += `<button class="cal-day${sel?' selected':''}" ${dis?'disabled':''} onclick="Cal.pick(${d})">${d}</button>`;
+    }
+    grid.innerHTML = h;
+  },
+  prev(){ if(--this.month<0){this.month=11;this.year--;} this.render(); },
+  next(){ if(++this.month>11){this.month=0;this.year++;} this.render(); },
+  pick(d){
+    this.selDate = new Date(this.year,this.month,d);
+    this.selTime = null; this.render();
+    const sw = document.getElementById('slotsWrap');
+    const bf = document.getElementById('bookForm');
+    if(sw) sw.style.display='block'; if(bf) bf.style.display='none';
+    const sg = document.getElementById('slotsGrid');
+    if(!sg) return;
+    const times=['10:00 AM','11:00 AM','12:00 PM','2:00 PM','3:00 PM','4:00 PM','5:00 PM'];
+    sg.innerHTML = times.map(t=>`<button class="slot-btn" onclick="Cal.pickTime('${t}',this)">${t}</button>`).join('');
+  },
+  pickTime(time,btn){
+    this.selTime=time;
+    document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    const bf = document.getElementById('bookForm');
+    if(bf) bf.style.display='block';
+  },
+  async confirm(){
+    const name  = document.getElementById('bookName')?.value?.trim();
+    const phone = document.getElementById('bookPhone')?.value?.trim();
+    const lang  = Site.lang;
+    if(!name||name.length<2){ alert(lang==='hi'?'कृपया अपना नाम भरें।':'Please enter your name.'); return; }
+    if(!phone||!/^\d{10}$/.test(phone)){ alert(lang==='hi'?'10-digit mobile number भरें।':'Enter a valid 10-digit number.'); return; }
+    const btn = document.getElementById('confirmBtn');
+    const orig = btn ? btn.innerHTML : '';
+    if(btn){ btn.disabled=true; btn.innerHTML='<span class="spinner"></span>'; }
+    const payload = {name,phone,appointment_date:this.selDate?this.selDate.toLocaleDateString('en-IN'):'TBD',time_slot:this.selTime||'TBD',created_at:new Date().toISOString(),status:'pending'};
+    const result = await sb.insert('appointments', payload);
+    console.log('Appointment:', payload, result);
+    if(btn){ btn.innerHTML=orig; btn.disabled=false; }
+    const s = document.getElementById('bookSuccess');
+    const f = document.getElementById('bookForm');
+    if(s) s.style.display='block'; if(f) f.style.display='none';
+    Site.applyLang();
+  }
+};
+
+// ── BOOT ─────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  Site.init();
+  Calc.init();
+  Quiz.init();
+  Cal.init();
+});
+</script>
+</body>
+</html>

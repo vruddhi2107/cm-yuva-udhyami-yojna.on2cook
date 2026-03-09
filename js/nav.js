@@ -38,9 +38,9 @@
 
     <!-- Logo -->
     <a href="index.html" class="nav-logo" aria-label="CM-YUVA × On2Cook — Home">
-      <span class="logo-badge">CM-YUVA</span>
+      <img src="assets/cm-yuva-logo.jpg" class="logo-img" alt="CM-YUVA">
       <span class="logo-x">×</span>
-      <span class="logo-brand">On2Cook</span>
+      <img src="images/on2cook-logo.png" class="logo-img" alt="On2Cook">
     </a>
 
     <!-- Desktop links -->
@@ -129,6 +129,17 @@
   padding: 3px 7px;
   border-radius: 4px;
   line-height: 1;
+}
+  .logo-img{
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo{
+  display:flex;
+  align-items:center;
+  gap:6px;
 }
 .logo-x {
   color: var(--c-ink30, #aaa);

@@ -1,21 +1,4 @@
-/* ============================================================
-   ON2COOK × CM-YUVA  |  supabase.js
-   Standalone Supabase integration — no SDK needed.
 
-   HOW TO USE:
-   1. Paste your real values for SUPABASE_URL and SUPABASE_ANON_KEY below.
-   2. Add this BEFORE shared.js in every HTML page:
-        <script src="js/supabase.js"></script>
-        <script src="js/shared.js"></script>
-   ============================================================ */
-
-// ── YOUR CREDENTIALS ────────────────────────────────────────
-// Find these in: Supabase Dashboard → Project Settings → API
-//
-//   SUPABASE_URL      →  "Project URL"         (looks like https://xxxx.supabase.co)
-//   SUPABASE_ANON_KEY →  "anon" "public" key   (long JWT string — safe for frontend)
-//
-// ⚠️  NEVER put your service_role key here. That key bypasses all RLS.
 const SUPABASE_URL  = 'https://bugsfjchvdhujazurjzq.supabase.co';
 const SUPABASE_ANON_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ1Z3NmamNodmRodWphenVyanpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI3MDU4NzYsImV4cCI6MjA4ODI4MTg3Nn0.T5CEeN81kqC7YwNaFIqJ3sUZABHU5GZ-MsFvzAl6_VI';
 

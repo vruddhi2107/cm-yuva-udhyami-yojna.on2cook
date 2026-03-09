@@ -13,6 +13,21 @@
 <style>
 /* ── RESET & TOKENS ──────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+.logo-img{
+  height: 28px;
+  width: auto;
+  display: block;
+}
+.logo-img1{
+  height: 75px;
+  width: auto;
+  display: block;
+}
+.nav-logo{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
 html{scroll-behavior:smooth;font-size:16px}
 :root{
   --red:#a31f14;--red-d:#7d1810;--red-t:#fdf3f2;
@@ -451,10 +466,11 @@ footer{background:var(--ink90);padding:48px 0 24px;color:rgba(255,255,255,.6)}
 <!-- ══ NAVBAR ════════════════════════════════════════════════ -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner wrap">
-    <a href="#hero" class="nav-logo">
-      <span class="logo-badge">CM-YUVA</span>
+    <a href="index.html" class="nav-logo" aria-label="CM-YUVA × On2Cook — Home">
+            <img src="assets/On2cook_Logo_Black.png" class="logo-img" alt="On2Cook">
       <span class="logo-x">×</span>
-      <span class="logo-brand">On2Cook</span>
+            <img src="assets/cm-yuva-logo.png" class="logo-img1" alt="CM-YUVA">
+
     </a>
     <div class="nav-links">
       <a href="#roi"         class="nav-link"><span class="hi">Scheme</span><span class="en">Scheme</span></a>
